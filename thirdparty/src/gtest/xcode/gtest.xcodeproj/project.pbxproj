@@ -799,7 +799,6 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = Check;
-				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -811,7 +810,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = Check;
-				SDKROOT = macosx;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -822,7 +820,6 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = ../;
 				PRODUCT_NAME = "gtest_unittest-framework";
-				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -832,7 +829,6 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = ../;
 				PRODUCT_NAME = "gtest_unittest-framework";
-				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -841,7 +837,6 @@
 			buildSettings = {
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = "sample1_unittest-framework";
-				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -850,7 +845,6 @@
 			buildSettings = {
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = "sample1_unittest-framework";
-				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -861,7 +855,6 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = gtest;
-				SDKROOT = macosx;
 				TARGET_NAME = gtest;
 			};
 			name = Debug;
@@ -873,7 +866,6 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = gtest;
-				SDKROOT = macosx;
 				TARGET_NAME = gtest;
 			};
 			name = Release;
@@ -891,7 +883,6 @@
 					../include/,
 				);
 				PRODUCT_NAME = gtest;
-				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -908,7 +899,6 @@
 					../include/,
 				);
 				PRODUCT_NAME = gtest;
-				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -923,7 +913,6 @@
 					../include/,
 				);
 				PRODUCT_NAME = gtest_main;
-				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -938,7 +927,6 @@
 					../include/,
 				);
 				PRODUCT_NAME = gtest_main;
-				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -948,7 +936,6 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = ../;
 				PRODUCT_NAME = gtest_unittest;
-				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -958,7 +945,6 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = ../;
 				PRODUCT_NAME = gtest_unittest;
-				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -967,7 +953,6 @@
 			buildSettings = {
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = "sample1_unittest-static";
-				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -976,7 +961,6 @@
 			buildSettings = {
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				PRODUCT_NAME = "sample1_unittest-static";
-				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -996,7 +980,6 @@
 				INFOPLIST_PREFIX_HEADER = "$(PROJECT_TEMP_DIR)/Version.h";
 				INFOPLIST_PREPROCESS = YES;
 				PRODUCT_NAME = gtest;
-				SDKROOT = macosx;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1017,7 +1000,6 @@
 				INFOPLIST_PREFIX_HEADER = "$(PROJECT_TEMP_DIR)/Version.h";
 				INFOPLIST_PREPROCESS = YES;
 				PRODUCT_NAME = gtest;
-				SDKROOT = macosx;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -1026,6 +1008,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 40D4CDF10E30E07400294801 /* DebugProject.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -1033,6 +1017,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 40D4CDF40E30E07400294801 /* ReleaseProject.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};

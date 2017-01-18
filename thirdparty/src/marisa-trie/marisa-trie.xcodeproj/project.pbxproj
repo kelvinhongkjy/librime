@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B608F9CC1E2C42CB00F38B03 /* agent.cc in Sources */ = {isa = PBXBuildFile; fileRef = B608F99A1E2C42CB00F38B03 /* agent.cc */; };
+		B608F9CD1E2C42CB00F38B03 /* mapper.cc in Sources */ = {isa = PBXBuildFile; fileRef = B608F9A41E2C42CB00F38B03 /* mapper.cc */; };
+		B608F9CE1E2C42CB00F38B03 /* reader.cc in Sources */ = {isa = PBXBuildFile; fileRef = B608F9A61E2C42CB00F38B03 /* reader.cc */; };
+		B608F9CF1E2C42CB00F38B03 /* writer.cc in Sources */ = {isa = PBXBuildFile; fileRef = B608F9A81E2C42CB00F38B03 /* writer.cc */; };
+		B608F9D01E2C42CB00F38B03 /* louds-trie.cc in Sources */ = {isa = PBXBuildFile; fileRef = B608F9B21E2C42CB00F38B03 /* louds-trie.cc */; };
+		B608F9D11E2C42CB00F38B03 /* tail.cc in Sources */ = {isa = PBXBuildFile; fileRef = B608F9B61E2C42CB00F38B03 /* tail.cc */; };
+		B608F9D21E2C42CB00F38B03 /* bit-vector.cc in Sources */ = {isa = PBXBuildFile; fileRef = B608F9BA1E2C42CB00F38B03 /* bit-vector.cc */; };
+		B608F9D31E2C42CB00F38B03 /* keyset.cc in Sources */ = {isa = PBXBuildFile; fileRef = B608F9C31E2C42CB00F38B03 /* keyset.cc */; };
+		B608F9D41E2C42CB00F38B03 /* trie.cc in Sources */ = {isa = PBXBuildFile; fileRef = B608F9C91E2C42CB00F38B03 /* trie.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B608F98D1E2C427F00F38B03 /* libmarisa-trie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libmarisa-trie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B608F99A1E2C42CB00F38B03 /* agent.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = agent.cc; sourceTree = "<group>"; };
+		B608F99B1E2C42CB00F38B03 /* agent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agent.h; sourceTree = "<group>"; };
+		B608F99C1E2C42CB00F38B03 /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
+		B608F99D1E2C42CB00F38B03 /* exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exception.h; sourceTree = "<group>"; };
+		B608F9A01E2C42CB00F38B03 /* sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sort.h; sourceTree = "<group>"; };
+		B608F9A11E2C42CB00F38B03 /* algorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = algorithm.h; sourceTree = "<group>"; };
+		B608F9A21E2C42CB00F38B03 /* intrin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = intrin.h; sourceTree = "<group>"; };
+		B608F9A41E2C42CB00F38B03 /* mapper.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mapper.cc; sourceTree = "<group>"; };
+		B608F9A51E2C42CB00F38B03 /* mapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapper.h; sourceTree = "<group>"; };
+		B608F9A61E2C42CB00F38B03 /* reader.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = reader.cc; sourceTree = "<group>"; };
+		B608F9A71E2C42CB00F38B03 /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
+		B608F9A81E2C42CB00F38B03 /* writer.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = writer.cc; sourceTree = "<group>"; };
+		B608F9A91E2C42CB00F38B03 /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
+		B608F9AA1E2C42CB00F38B03 /* io.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = io.h; sourceTree = "<group>"; };
+		B608F9AC1E2C42CB00F38B03 /* cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cache.h; sourceTree = "<group>"; };
+		B608F9AD1E2C42CB00F38B03 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		B608F9AE1E2C42CB00F38B03 /* entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entry.h; sourceTree = "<group>"; };
+		B608F9AF1E2C42CB00F38B03 /* header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = header.h; sourceTree = "<group>"; };
+		B608F9B01E2C42CB00F38B03 /* history.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = history.h; sourceTree = "<group>"; };
+		B608F9B11E2C42CB00F38B03 /* key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = key.h; sourceTree = "<group>"; };
+		B608F9B21E2C42CB00F38B03 /* louds-trie.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "louds-trie.cc"; sourceTree = "<group>"; };
+		B608F9B31E2C42CB00F38B03 /* louds-trie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "louds-trie.h"; sourceTree = "<group>"; };
+		B608F9B41E2C42CB00F38B03 /* range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = range.h; sourceTree = "<group>"; };
+		B608F9B51E2C42CB00F38B03 /* state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = state.h; sourceTree = "<group>"; };
+		B608F9B61E2C42CB00F38B03 /* tail.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tail.cc; sourceTree = "<group>"; };
+		B608F9B71E2C42CB00F38B03 /* tail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tail.h; sourceTree = "<group>"; };
+		B608F9B81E2C42CB00F38B03 /* trie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trie.h; sourceTree = "<group>"; };
+		B608F9BA1E2C42CB00F38B03 /* bit-vector.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "bit-vector.cc"; sourceTree = "<group>"; };
+		B608F9BB1E2C42CB00F38B03 /* bit-vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "bit-vector.h"; sourceTree = "<group>"; };
+		B608F9BC1E2C42CB00F38B03 /* flat-vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "flat-vector.h"; sourceTree = "<group>"; };
+		B608F9BD1E2C42CB00F38B03 /* pop-count.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "pop-count.h"; sourceTree = "<group>"; };
+		B608F9BE1E2C42CB00F38B03 /* rank-index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "rank-index.h"; sourceTree = "<group>"; };
+		B608F9BF1E2C42CB00F38B03 /* vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector.h; sourceTree = "<group>"; };
+		B608F9C01E2C42CB00F38B03 /* vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector.h; sourceTree = "<group>"; };
+		B608F9C11E2C42CB00F38B03 /* iostream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iostream.h; sourceTree = "<group>"; };
+		B608F9C21E2C42CB00F38B03 /* key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = key.h; sourceTree = "<group>"; };
+		B608F9C31E2C42CB00F38B03 /* keyset.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = keyset.cc; sourceTree = "<group>"; };
+		B608F9C41E2C42CB00F38B03 /* keyset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyset.h; sourceTree = "<group>"; };
+		B608F9C51E2C42CB00F38B03 /* query.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = query.h; sourceTree = "<group>"; };
+		B608F9C61E2C42CB00F38B03 /* scoped-array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "scoped-array.h"; sourceTree = "<group>"; };
+		B608F9C71E2C42CB00F38B03 /* scoped-ptr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "scoped-ptr.h"; sourceTree = "<group>"; };
+		B608F9C81E2C42CB00F38B03 /* stdio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdio.h; sourceTree = "<group>"; };
+		B608F9C91E2C42CB00F38B03 /* trie.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = trie.cc; sourceTree = "<group>"; };
+		B608F9CA1E2C42CB00F38B03 /* trie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = trie.h; sourceTree = "<group>"; };
+		B608F9CB1E2C42CB00F38B03 /* marisa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = marisa.h; path = lib/marisa.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		B608F9841E2C427F00F38B03 = {
+			isa = PBXGroup;
+			children = (
+				B608F98F1E2C427F00F38B03 /* marisa-trie */,
+				B608F98E1E2C427F00F38B03 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B608F98E1E2C427F00F38B03 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B608F98D1E2C427F00F38B03 /* libmarisa-trie.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B608F98F1E2C427F00F38B03 /* marisa-trie */ = {
+			isa = PBXGroup;
+			children = (
+				B608F9991E2C42CB00F38B03 /* marisa */,
+				B608F9CB1E2C42CB00F38B03 /* marisa.h */,
+			);
+			path = "marisa-trie";
+			sourceTree = "<group>";
+		};
+		B608F9991E2C42CB00F38B03 /* marisa */ = {
+			isa = PBXGroup;
+			children = (
+				B608F99A1E2C42CB00F38B03 /* agent.cc */,
+				B608F99B1E2C42CB00F38B03 /* agent.h */,
+				B608F99C1E2C42CB00F38B03 /* base.h */,
+				B608F99D1E2C42CB00F38B03 /* exception.h */,
+				B608F99E1E2C42CB00F38B03 /* grimoire */,
+				B608F9C11E2C42CB00F38B03 /* iostream.h */,
+				B608F9C21E2C42CB00F38B03 /* key.h */,
+				B608F9C31E2C42CB00F38B03 /* keyset.cc */,
+				B608F9C41E2C42CB00F38B03 /* keyset.h */,
+				B608F9C51E2C42CB00F38B03 /* query.h */,
+				B608F9C61E2C42CB00F38B03 /* scoped-array.h */,
+				B608F9C71E2C42CB00F38B03 /* scoped-ptr.h */,
+				B608F9C81E2C42CB00F38B03 /* stdio.h */,
+				B608F9C91E2C42CB00F38B03 /* trie.cc */,
+				B608F9CA1E2C42CB00F38B03 /* trie.h */,
+			);
+			name = marisa;
+			path = lib/marisa;
+			sourceTree = SOURCE_ROOT;
+		};
+		B608F99E1E2C42CB00F38B03 /* grimoire */ = {
+			isa = PBXGroup;
+			children = (
+				B608F99F1E2C42CB00F38B03 /* algorithm */,
+				B608F9A11E2C42CB00F38B03 /* algorithm.h */,
+				B608F9A21E2C42CB00F38B03 /* intrin.h */,
+				B608F9A31E2C42CB00F38B03 /* io */,
+				B608F9AA1E2C42CB00F38B03 /* io.h */,
+				B608F9AB1E2C42CB00F38B03 /* trie */,
+				B608F9B81E2C42CB00F38B03 /* trie.h */,
+				B608F9B91E2C42CB00F38B03 /* vector */,
+				B608F9C01E2C42CB00F38B03 /* vector.h */,
+			);
+			path = grimoire;
+			sourceTree = "<group>";
+		};
+		B608F99F1E2C42CB00F38B03 /* algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				B608F9A01E2C42CB00F38B03 /* sort.h */,
+			);
+			path = algorithm;
+			sourceTree = "<group>";
+		};
+		B608F9A31E2C42CB00F38B03 /* io */ = {
+			isa = PBXGroup;
+			children = (
+				B608F9A41E2C42CB00F38B03 /* mapper.cc */,
+				B608F9A51E2C42CB00F38B03 /* mapper.h */,
+				B608F9A61E2C42CB00F38B03 /* reader.cc */,
+				B608F9A71E2C42CB00F38B03 /* reader.h */,
+				B608F9A81E2C42CB00F38B03 /* writer.cc */,
+				B608F9A91E2C42CB00F38B03 /* writer.h */,
+			);
+			path = io;
+			sourceTree = "<group>";
+		};
+		B608F9AB1E2C42CB00F38B03 /* trie */ = {
+			isa = PBXGroup;
+			children = (
+				B608F9AC1E2C42CB00F38B03 /* cache.h */,
+				B608F9AD1E2C42CB00F38B03 /* config.h */,
+				B608F9AE1E2C42CB00F38B03 /* entry.h */,
+				B608F9AF1E2C42CB00F38B03 /* header.h */,
+				B608F9B01E2C42CB00F38B03 /* history.h */,
+				B608F9B11E2C42CB00F38B03 /* key.h */,
+				B608F9B21E2C42CB00F38B03 /* louds-trie.cc */,
+				B608F9B31E2C42CB00F38B03 /* louds-trie.h */,
+				B608F9B41E2C42CB00F38B03 /* range.h */,
+				B608F9B51E2C42CB00F38B03 /* state.h */,
+				B608F9B61E2C42CB00F38B03 /* tail.cc */,
+				B608F9B71E2C42CB00F38B03 /* tail.h */,
+			);
+			path = trie;
+			sourceTree = "<group>";
+		};
+		B608F9B91E2C42CB00F38B03 /* vector */ = {
+			isa = PBXGroup;
+			children = (
+				B608F9BA1E2C42CB00F38B03 /* bit-vector.cc */,
+				B608F9BB1E2C42CB00F38B03 /* bit-vector.h */,
+				B608F9BC1E2C42CB00F38B03 /* flat-vector.h */,
+				B608F9BD1E2C42CB00F38B03 /* pop-count.h */,
+				B608F9BE1E2C42CB00F38B03 /* rank-index.h */,
+				B608F9BF1E2C42CB00F38B03 /* vector.h */,
+			);
+			path = vector;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B608F98C1E2C427F00F38B03 /* marisa-trie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B608F9961E2C427F00F38B03 /* Build configuration list for PBXNativeTarget "marisa-trie" */;
+			buildPhases = (
+				B608F9891E2C427F00F38B03 /* Sources */,
+				B60810171E2DFD2600F38B03 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "marisa-trie";
+			productName = "marisa-trie";
+			productReference = B608F98D1E2C427F00F38B03 /* libmarisa-trie.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B608F9851E2C427F00F38B03 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Kelvin Hong";
+				TargetAttributes = {
+					B608F98C1E2C427F00F38B03 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B608F9881E2C427F00F38B03 /* Build configuration list for PBXProject "marisa-trie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B608F9841E2C427F00F38B03;
+			productRefGroup = B608F98E1E2C427F00F38B03 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B608F98C1E2C427F00F38B03 /* marisa-trie */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B60810171E2DFD2600F38B03 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp \"$PROJECT_DIR/lib/marisa.h\" \"$PROJECT_DIR/../../include/\"\ncp -R \"$PROJECT_DIR/lib/marisa\" \"$PROJECT_DIR/../../include/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B608F9891E2C427F00F38B03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B608F9CD1E2C42CB00F38B03 /* mapper.cc in Sources */,
+				B608F9D01E2C42CB00F38B03 /* louds-trie.cc in Sources */,
+				B608F9D31E2C42CB00F38B03 /* keyset.cc in Sources */,
+				B608F9D41E2C42CB00F38B03 /* trie.cc in Sources */,
+				B608F9CE1E2C42CB00F38B03 /* reader.cc in Sources */,
+				B608F9D21E2C42CB00F38B03 /* bit-vector.cc in Sources */,
+				B608F9D11E2C42CB00F38B03 /* tail.cc in Sources */,
+				B608F9CF1E2C42CB00F38B03 /* writer.cc in Sources */,
+				B608F9CC1E2C42CB00F38B03 /* agent.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B608F9941E2C427F00F38B03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B608F9951E2C427F00F38B03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B608F9971E2C427F00F38B03 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = marisa;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B608F9981E2C427F00F38B03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = marisa;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B608F9881E2C427F00F38B03 /* Build configuration list for PBXProject "marisa-trie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B608F9941E2C427F00F38B03 /* Debug */,
+				B608F9951E2C427F00F38B03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B608F9961E2C427F00F38B03 /* Build configuration list for PBXNativeTarget "marisa-trie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B608F9971E2C427F00F38B03 /* Debug */,
+				B608F9981E2C427F00F38B03 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B608F9851E2C427F00F38B03 /* Project object */;
+}

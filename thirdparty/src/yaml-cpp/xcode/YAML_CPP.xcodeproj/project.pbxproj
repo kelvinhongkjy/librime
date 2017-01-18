@@ -1,0 +1,962 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0245717B5E984374A31A8C7E /* ostream_wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE9D17AFDDB0454F9BC90160 /* ostream_wrapper.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		07699F1DCB4340FE991C3587 /* parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 71C08D74A5D64CE4937E30EB /* parser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		07DBA48CA4364DAC91568ABA /* stream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FC5BA9A17B74978A828365C /* stream.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1003F047E47144739554D960 /* scantag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB72C463F3AC437397DF5E39 /* scantag.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		259D10A858514139B9E4C05F /* convert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4F40A96B342C3BACE3A7D /* convert.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		274FE402889D4E53A202ECFF /* null.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9EEDC853339A4E1FA03523F1 /* null.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2DF28E514B444D7F8294165E /* simplekey.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19A402960E3C4B3B8CD5BBF3 /* simplekey.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2F2ECD1B7D5A43E795C2E493 /* memory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E134EB4E20C74D288BB355BC /* memory.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		4FA4FCA2A85140F39A9072FD /* nodeevents.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 45021400D2C141B3B3D1F916 /* nodeevents.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		527A29EC760C44A08641E31B /* singledocparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 66FC46839A8D4143A9D1D975 /* singledocparser.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		532646F960AB4C77A2C2CB99 /* tag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2B3481C84F244A3BB19F13E /* tag.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5B51DECC13354BF1A030B471 /* emitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA89191AACE14EF48AA56DC7 /* emitter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5E0B7D393A194551A18E29CE /* scanner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 106704C030684A269DA57222 /* scanner.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		665B49BD15874BD3A5A73716 /* graphbuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7583622EDA0C43B690963AD3 /* graphbuilder.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		6FF3DCF2EF044487A8FCE107 /* emit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E6FDF2D484B0426D8DC229CB /* emit.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		7928ABF86D9F42AA96D6E55A /* binary.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BD561E83B1924871B9876731 /* binary.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		A9C985C36B97452DA973E070 /* scantoken.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 488E5586D3CC4D62881CA1DF /* scantoken.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		AD1BACD378F541E6AD2DB29E /* node_data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06D1E9EB2F1244A38C918AB2 /* node_data.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B0D7616495144D8A8B115E69 /* emitfromevents.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1D6228E97E41483DA6611357 /* emitfromevents.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		BA38C6EE4470407DA5F1A4DA /* nodebuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15D001BF4BC14AB18D34D689 /* nodebuilder.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		CA0C07E40AB945A1A674B1E1 /* regex_yaml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E21649B21A4948DF9D13325B /* regex_yaml.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D2DF7FB8D7394A2F8B36F42E /* directives.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10CC1CF098DD4762966DB7DF /* directives.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		D55E126E05DC45B4891F1E5F /* exp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FC2C9B108F247AAA6224492 /* exp.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DA69620097C7437D86178491 /* scanscalar.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 05993A576D8D46BEAF8D244F /* scanscalar.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		DA837108618B4970A1DD451F /* graphbuilderadapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10813DCD3DEB41319A74F1CC /* graphbuilderadapter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E5C3B705A4FF48CA9D1CE65A /* emitterutils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DF2C42DDF1448B79E3FF5D7 /* emitterutils.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E858A4FA9B00429A8EB1FD7D /* parse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C1608E6F75B4DE3862CD92F /* parse.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		E9995D31D9C84DAF9D94B13F /* node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 43C975F149884D46AD592C75 /* node.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		EF2CABFF1E244213B2A4B332 /* emitterstate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1E092BA3BACB41159DC9F243 /* emitterstate.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00DE673777C44BFFA3FAA275 /* exceptions.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = exceptions.h; path = "include/yaml-cpp/exceptions.h"; sourceTree = SOURCE_ROOT; };
+		02FC9B42388C454BB2501719 /* gen_emitter_test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gen_emitter_test.cpp; path = test/integration/gen_emitter_test.cpp; sourceTree = SOURCE_ROOT; };
+		05993A576D8D46BEAF8D244F /* scanscalar.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = scanscalar.cpp; path = src/scanscalar.cpp; sourceTree = SOURCE_ROOT; };
+		0683509F579F4DE1B759F94A /* exp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = exp.h; path = src/exp.h; sourceTree = SOURCE_ROOT; };
+		06D1E9EB2F1244A38C918AB2 /* node_data.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = node_data.cpp; path = src/node_data.cpp; sourceTree = SOURCE_ROOT; };
+		081F594D8F3047DC82CA251F /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		094C71AF94C24390A0C43FDD /* gmock_main.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gmock_main.cc; path = "test/gmock-1.7.0/src/gmock_main.cc"; sourceTree = SOURCE_ROOT; };
+		102202D1B07B4DBEA04C59A8 /* impl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = impl.h; path = "include/yaml-cpp/node/detail/impl.h"; sourceTree = SOURCE_ROOT; };
+		106704C030684A269DA57222 /* scanner.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = scanner.cpp; path = src/scanner.cpp; sourceTree = SOURCE_ROOT; };
+		10813DCD3DEB41319A74F1CC /* graphbuilderadapter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = graphbuilderadapter.cpp; path = src/contrib/graphbuilderadapter.cpp; sourceTree = SOURCE_ROOT; };
+		10CC1CF098DD4762966DB7DF /* directives.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = directives.cpp; path = src/directives.cpp; sourceTree = SOURCE_ROOT; };
+		135D731F2E7B49199735256D /* gmock-all.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gmock-all.cc"; path = "test/gmock-1.7.0/src/gmock-all.cc"; sourceTree = SOURCE_ROOT; };
+		1535FBEBB8A641CB9ECF1240 /* nodeevents.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nodeevents.h; path = src/nodeevents.h; sourceTree = SOURCE_ROOT; };
+		15D001BF4BC14AB18D34D689 /* nodebuilder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = nodebuilder.cpp; path = src/nodebuilder.cpp; sourceTree = SOURCE_ROOT; };
+		19A402960E3C4B3B8CD5BBF3 /* simplekey.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = simplekey.cpp; path = src/simplekey.cpp; sourceTree = SOURCE_ROOT; };
+		1B87E9C36A3A4BC5932F2073 /* bool_type.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = bool_type.h; path = "include/yaml-cpp/node/detail/bool_type.h"; sourceTree = SOURCE_ROOT; };
+		1C1608E6F75B4DE3862CD92F /* parse.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = parse.cpp; path = src/parse.cpp; sourceTree = SOURCE_ROOT; };
+		1D6228E97E41483DA6611357 /* emitfromevents.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = emitfromevents.cpp; path = src/emitfromevents.cpp; sourceTree = SOURCE_ROOT; };
+		1E092BA3BACB41159DC9F243 /* emitterstate.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = emitterstate.cpp; path = src/emitterstate.cpp; sourceTree = SOURCE_ROOT; };
+		1EA727141B1947A59492CAA2 /* anchor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = anchor.h; path = "include/yaml-cpp/anchor.h"; sourceTree = SOURCE_ROOT; };
+		1EC5EDD2F9E04F12AA455A94 /* emit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = emit.h; path = "include/yaml-cpp/node/emit.h"; sourceTree = SOURCE_ROOT; };
+		2017EB4313B94132988CB019 /* dll.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dll.h; path = "include/yaml-cpp/dll.h"; sourceTree = SOURCE_ROOT; };
+		238AE378474846B59DCEAA5D /* gtest-all.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gtest-all.cc"; path = "test/gmock-1.7.0/gtest/src/gtest-all.cc"; sourceTree = SOURCE_ROOT; };
+		25175662D6C14EE997E89316 /* iterator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = iterator.h; path = "include/yaml-cpp/node/detail/iterator.h"; sourceTree = SOURCE_ROOT; };
+		27B77CE279264DDAB2ABBDD6 /* parse.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = parse.h; path = "include/yaml-cpp/node/parse.h"; sourceTree = SOURCE_ROOT; };
+		2BE60CF2864E47B082027F88 /* ptr.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ptr.h; path = "include/yaml-cpp/node/ptr.h"; sourceTree = SOURCE_ROOT; };
+		2D3BEDE26FA540B0BFD9E77A /* streamcharsource.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = streamcharsource.h; path = src/streamcharsource.h; sourceTree = SOURCE_ROOT; };
+		2F674AA576994E19B1B84CA9 /* regex_yaml.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = regex_yaml.h; path = src/regex_yaml.h; sourceTree = SOURCE_ROOT; };
+		2FC2C9B108F247AAA6224492 /* exp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = exp.cpp; path = src/exp.cpp; sourceTree = SOURCE_ROOT; };
+		300D83FB572440C3AAD98A10 /* handler_spec_test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = handler_spec_test.cpp; path = test/integration/handler_spec_test.cpp; sourceTree = SOURCE_ROOT; };
+		305A9D66C1024FF5B9DE499D /* emitfromevents.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = emitfromevents.h; path = "include/yaml-cpp/emitfromevents.h"; sourceTree = SOURCE_ROOT; };
+		3140272604E443DCB54FE2E2 /* parse.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = parse.cpp; path = util/parse.cpp; sourceTree = SOURCE_ROOT; };
+		33048782114042EA86C96DC7 /* node_spec_test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = node_spec_test.cpp; path = test/integration/node_spec_test.cpp; sourceTree = SOURCE_ROOT; };
+		3384601FE3A444A3A5A81A1C /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = util/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3415BC0DF7584D0088FBBA7E /* directives.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = directives.h; path = src/directives.h; sourceTree = SOURCE_ROOT; };
+		346758C798654EE987BF670E /* node_data.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = node_data.h; path = "include/yaml-cpp/node/detail/node_data.h"; sourceTree = SOURCE_ROOT; };
+		3499F4B30DAC4816B5289A6E /* eventhandler.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = eventhandler.h; path = "include/yaml-cpp/eventhandler.h"; sourceTree = SOURCE_ROOT; };
+		3CCB83AEDA784DD0BFBF948F /* anchordict.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = anchordict.h; path = "include/yaml-cpp/contrib/anchordict.h"; sourceTree = SOURCE_ROOT; };
+		3CFC4E04A1DB4E9FB1393581 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = test/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3D0389063120402EBAB604D2 /* singledocparser.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = singledocparser.h; path = src/singledocparser.h; sourceTree = SOURCE_ROOT; };
+		3ECC1B0A7B4E444D80090163 /* specexamples.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = specexamples.h; path = test/specexamples.h; sourceTree = SOURCE_ROOT; };
+		402D4B878CE541A78774B41F /* setting.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = setting.h; path = src/setting.h; sourceTree = SOURCE_ROOT; };
+		43AE1A368F9443AAA5D8B37D /* node_iterator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = node_iterator.h; path = "include/yaml-cpp/node/detail/node_iterator.h"; sourceTree = SOURCE_ROOT; };
+		43C975F149884D46AD592C75 /* node.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = node.cpp; path = src/node.cpp; sourceTree = SOURCE_ROOT; };
+		45021400D2C141B3B3D1F916 /* nodeevents.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = nodeevents.cpp; path = src/nodeevents.cpp; sourceTree = SOURCE_ROOT; };
+		45C01FEE82314374BC7BCCB6 /* node.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = node.h; path = "include/yaml-cpp/node/detail/node.h"; sourceTree = SOURCE_ROOT; };
+		488E5586D3CC4D62881CA1DF /* scantoken.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = scantoken.cpp; path = src/scantoken.cpp; sourceTree = SOURCE_ROOT; };
+		4F75F831D80D4887B9970167 /* yaml.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = yaml.h; path = "include/yaml-cpp/yaml.h"; sourceTree = SOURCE_ROOT; };
+		4F7C6BAE19E24C1A9207B6A9 /* load_node_test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = load_node_test.cpp; path = test/integration/load_node_test.cpp; sourceTree = SOURCE_ROOT; };
+		4FC5BA9A17B74978A828365C /* stream.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stream.cpp; path = src/stream.cpp; sourceTree = SOURCE_ROOT; };
+		5207894DBD724C3DABB24D89 /* scanscalar.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = scanscalar.h; path = src/scanscalar.h; sourceTree = SOURCE_ROOT; };
+		5A785A33CFBE46158CB128EC /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5B68AE540DA5421FBD59F603 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = util/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5DF2C42DDF1448B79E3FF5D7 /* emitterutils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = emitterutils.cpp; path = src/emitterutils.cpp; sourceTree = SOURCE_ROOT; };
+		5E0CA572A29A407995A1011D /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = "test/gmock-1.7.0/gtest/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		5E852BF3154B4EBA99A05FB2 /* encoding_test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = encoding_test.cpp; path = test/integration/encoding_test.cpp; sourceTree = SOURCE_ROOT; };
+		5EB1BCA7051146B3B3F4BF70 /* libyaml-cpp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libyaml-cpp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FBEEF3C7FA74DA7B02E3DEB /* emittermanip.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = emittermanip.h; path = "include/yaml-cpp/emittermanip.h"; sourceTree = SOURCE_ROOT; };
+		61551ADC12B8494699D5908C /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6269C80DEFEE4AEC8E34F8BC /* emitterstyle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = emitterstyle.h; path = "include/yaml-cpp/emitterstyle.h"; sourceTree = SOURCE_ROOT; };
+		6468A9229C544E96908A0F95 /* sandbox.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sandbox.cpp; path = util/sandbox.cpp; sourceTree = SOURCE_ROOT; };
+		66FC46839A8D4143A9D1D975 /* singledocparser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = singledocparser.cpp; path = src/singledocparser.cpp; sourceTree = SOURCE_ROOT; };
+		6A6A041DCF604AD8B64564CE /* type.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = type.h; path = "include/yaml-cpp/node/type.h"; sourceTree = SOURCE_ROOT; };
+		6D58B23694AE428A9586F890 /* stlemitter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stlemitter.h; path = "include/yaml-cpp/stlemitter.h"; sourceTree = SOURCE_ROOT; };
+		6D8018F913AC4114BDD94530 /* handler_test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = handler_test.cpp; path = test/integration/handler_test.cpp; sourceTree = SOURCE_ROOT; };
+		6DD6289970A849D7AE5BB831 /* emitterdef.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = emitterdef.h; path = "include/yaml-cpp/emitterdef.h"; sourceTree = SOURCE_ROOT; };
+		6ECEA86E14AD4EF096C8EDF6 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = "test/gmock-1.7.0/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		71C08D74A5D64CE4937E30EB /* parser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = parser.cpp; path = src/parser.cpp; sourceTree = SOURCE_ROOT; };
+		7583622EDA0C43B690963AD3 /* graphbuilder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = graphbuilder.cpp; path = src/contrib/graphbuilder.cpp; sourceTree = SOURCE_ROOT; };
+		767B2F98C0EA4B34A51713D5 /* node_ref.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = node_ref.h; path = "include/yaml-cpp/node/detail/node_ref.h"; sourceTree = SOURCE_ROOT; };
+		76FD3BB021C3416AAD3FE012 /* impl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = impl.h; path = "include/yaml-cpp/node/impl.h"; sourceTree = SOURCE_ROOT; };
+		7998AB8CDC474535A9F20EB0 /* stream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stream.h; path = src/stream.h; sourceTree = SOURCE_ROOT; };
+		79F7315791884BEC8EB77C6F /* mock_event_handler.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mock_event_handler.h; path = test/mock_event_handler.h; sourceTree = SOURCE_ROOT; };
+		7E7DA8F7B75646A1969A1873 /* stringsource.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stringsource.h; path = src/stringsource.h; sourceTree = SOURCE_ROOT; };
+		8110EFBD8890489E88CFBC99 /* convert.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = convert.h; path = "include/yaml-cpp/node/convert.h"; sourceTree = SOURCE_ROOT; };
+		860420EC73AB47B1A5AD5EED /* noncopyable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = noncopyable.h; path = "include/yaml-cpp/noncopyable.h"; sourceTree = SOURCE_ROOT; };
+		8CC4F40A96B342C3BACE3A7D /* convert.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = convert.cpp; path = src/convert.cpp; sourceTree = SOURCE_ROOT; };
+		8F752C348FF64F25B2030281 /* main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = test/main.cpp; sourceTree = SOURCE_ROOT; };
+		909AF89620824CF1993E5661 /* ostream_wrapper.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ostream_wrapper.h; path = "include/yaml-cpp/ostream_wrapper.h"; sourceTree = SOURCE_ROOT; };
+		9361749289DA4FFF972E431B /* iterator_fwd.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = iterator_fwd.h; path = "include/yaml-cpp/node/detail/iterator_fwd.h"; sourceTree = SOURCE_ROOT; };
+		937413411C9B4080985ECECA /* emitterutils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = emitterutils.h; path = src/emitterutils.h; sourceTree = SOURCE_ROOT; };
+		940582D0D4AC4BBD95759D6A /* graphbuilderadapter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = graphbuilderadapter.h; path = src/contrib/graphbuilderadapter.h; sourceTree = SOURCE_ROOT; };
+		94A73FB0D2074EAAA81C9A05 /* token.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = token.h; path = src/token.h; sourceTree = SOURCE_ROOT; };
+		95B88947E86C441B8EDECDEB /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		95F5E4D973094027A5F0CF29 /* memory.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = memory.h; path = "include/yaml-cpp/node/detail/memory.h"; sourceTree = SOURCE_ROOT; };
+		9A59EE75D61A4CAF99EAB1CD /* binary.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = binary.h; path = "include/yaml-cpp/binary.h"; sourceTree = SOURCE_ROOT; };
+		9B0A822809144763834C35B6 /* indentation.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = indentation.h; path = src/indentation.h; sourceTree = SOURCE_ROOT; };
+		9B0E7D88068A4D4791F17F95 /* null.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = null.h; path = "include/yaml-cpp/null.h"; sourceTree = SOURCE_ROOT; };
+		9C27B2280308437ABF7619F1 /* parser.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = parser.h; path = "include/yaml-cpp/parser.h"; sourceTree = SOURCE_ROOT; };
+		9EEDC853339A4E1FA03523F1 /* null.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = null.cpp; path = src/null.cpp; sourceTree = SOURCE_ROOT; };
+		A115E5B0A3224B3992C790AB /* handler_test.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = handler_test.h; path = test/handler_test.h; sourceTree = SOURCE_ROOT; };
+		A2B3481C84F244A3BB19F13E /* tag.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tag.cpp; path = src/tag.cpp; sourceTree = SOURCE_ROOT; };
+		A835EDD92B454990B64DD393 /* nodebuilder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = nodebuilder.h; path = src/nodebuilder.h; sourceTree = SOURCE_ROOT; };
+		A99811F0B6B54F1B93DFF094 /* mark.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mark.h; path = "include/yaml-cpp/mark.h"; sourceTree = SOURCE_ROOT; };
+		AB72C463F3AC437397DF5E39 /* scantag.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = scantag.cpp; path = src/scantag.cpp; sourceTree = SOURCE_ROOT; };
+		AD052FA5B3E94596A83D1E85 /* emitterstate.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = emitterstate.h; path = src/emitterstate.h; sourceTree = SOURCE_ROOT; };
+		B1C5A737AC0442FDA9409982 /* ostream_wrapper_test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ostream_wrapper_test.cpp; path = test/ostream_wrapper_test.cpp; sourceTree = SOURCE_ROOT; };
+		B20ED7A62E5D41D3AE0859A3 /* ptr_stack.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ptr_stack.h; path = src/ptr_stack.h; sourceTree = SOURCE_ROOT; };
+		B29727DC8B3A4380B3AF025B /* tag.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tag.h; path = src/tag.h; sourceTree = SOURCE_ROOT; };
+		B3813B2D2B0F40A59E6A72D2 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = "test/gmock-1.7.0/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		B6080FD91E2DF90900F38B03 /* anchor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = anchor.h; sourceTree = "<group>"; };
+		B6080FDA1E2DF90900F38B03 /* binary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = binary.h; sourceTree = "<group>"; };
+		B6080FDC1E2DF90900F38B03 /* anchordict.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = anchordict.h; sourceTree = "<group>"; };
+		B6080FDD1E2DF90900F38B03 /* graphbuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = graphbuilder.h; sourceTree = "<group>"; };
+		B6080FDE1E2DF90900F38B03 /* dll.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dll.h; sourceTree = "<group>"; };
+		B6080FDF1E2DF90900F38B03 /* emitfromevents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = emitfromevents.h; sourceTree = "<group>"; };
+		B6080FE01E2DF90900F38B03 /* emitter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = emitter.h; sourceTree = "<group>"; };
+		B6080FE11E2DF90900F38B03 /* emitterdef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = emitterdef.h; sourceTree = "<group>"; };
+		B6080FE21E2DF90900F38B03 /* emittermanip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = emittermanip.h; sourceTree = "<group>"; };
+		B6080FE31E2DF90900F38B03 /* emitterstyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = emitterstyle.h; sourceTree = "<group>"; };
+		B6080FE41E2DF90900F38B03 /* eventhandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = eventhandler.h; sourceTree = "<group>"; };
+		B6080FE51E2DF90900F38B03 /* exceptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = exceptions.h; sourceTree = "<group>"; };
+		B6080FE61E2DF90900F38B03 /* mark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mark.h; sourceTree = "<group>"; };
+		B6080FE81E2DF90900F38B03 /* convert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = convert.h; sourceTree = "<group>"; };
+		B6080FEA1E2DF90900F38B03 /* bool_type.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bool_type.h; sourceTree = "<group>"; };
+		B6080FEB1E2DF90900F38B03 /* impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = impl.h; sourceTree = "<group>"; };
+		B6080FEC1E2DF90900F38B03 /* iterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iterator.h; sourceTree = "<group>"; };
+		B6080FED1E2DF90900F38B03 /* iterator_fwd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iterator_fwd.h; sourceTree = "<group>"; };
+		B6080FEE1E2DF90900F38B03 /* memory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = memory.h; sourceTree = "<group>"; };
+		B6080FEF1E2DF90900F38B03 /* node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = node.h; sourceTree = "<group>"; };
+		B6080FF01E2DF90900F38B03 /* node_data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = node_data.h; sourceTree = "<group>"; };
+		B6080FF11E2DF90900F38B03 /* node_iterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = node_iterator.h; sourceTree = "<group>"; };
+		B6080FF21E2DF90900F38B03 /* node_ref.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = node_ref.h; sourceTree = "<group>"; };
+		B6080FF31E2DF90900F38B03 /* emit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = emit.h; sourceTree = "<group>"; };
+		B6080FF41E2DF90900F38B03 /* impl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = impl.h; sourceTree = "<group>"; };
+		B6080FF51E2DF90900F38B03 /* iterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iterator.h; sourceTree = "<group>"; };
+		B6080FF61E2DF90900F38B03 /* node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = node.h; sourceTree = "<group>"; };
+		B6080FF71E2DF90900F38B03 /* parse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = parse.h; sourceTree = "<group>"; };
+		B6080FF81E2DF90900F38B03 /* ptr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ptr.h; sourceTree = "<group>"; };
+		B6080FF91E2DF90900F38B03 /* type.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = type.h; sourceTree = "<group>"; };
+		B6080FFA1E2DF90900F38B03 /* noncopyable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = noncopyable.h; sourceTree = "<group>"; };
+		B6080FFB1E2DF90900F38B03 /* null.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = null.h; sourceTree = "<group>"; };
+		B6080FFC1E2DF90900F38B03 /* ostream_wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ostream_wrapper.h; sourceTree = "<group>"; };
+		B6080FFD1E2DF90900F38B03 /* parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = parser.h; sourceTree = "<group>"; };
+		B6080FFE1E2DF90900F38B03 /* stlemitter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stlemitter.h; sourceTree = "<group>"; };
+		B6080FFF1E2DF90900F38B03 /* traits.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = traits.h; sourceTree = "<group>"; };
+		B60810001E2DF90900F38B03 /* yaml.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = yaml.h; sourceTree = "<group>"; };
+		B66C5ADDB0334761A496E15C /* emitter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = emitter.h; path = "include/yaml-cpp/emitter.h"; sourceTree = SOURCE_ROOT; };
+		BD561E83B1924871B9876731 /* binary.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = binary.cpp; path = src/binary.cpp; sourceTree = SOURCE_ROOT; };
+		C1580F783DFE4778991E60D2 /* gtest-all.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gtest-all.cc"; path = "test/gmock-1.7.0/gtest/src/gtest-all.cc"; sourceTree = SOURCE_ROOT; };
+		C173F2EE95404C4BB96DF7D4 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = "test/gmock-1.7.0/gtest/CMakeLists.txt"; sourceTree = SOURCE_ROOT; };
+		C3998BA5C4DC4D308F08B5A3 /* regeximpl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = regeximpl.h; path = src/regeximpl.h; sourceTree = SOURCE_ROOT; };
+		C42E2122EADD4F4D91FB76BA /* node.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = node.h; path = "include/yaml-cpp/node/node.h"; sourceTree = SOURCE_ROOT; };
+		C7894D72E9F64486A6B4301C /* emitter_test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = emitter_test.cpp; path = test/integration/emitter_test.cpp; sourceTree = SOURCE_ROOT; };
+		C9030E31C4F74F649C39474B /* gmock-all.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gmock-all.cc"; path = "test/gmock-1.7.0/src/gmock-all.cc"; sourceTree = SOURCE_ROOT; };
+		CA89191AACE14EF48AA56DC7 /* emitter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = emitter.cpp; path = src/emitter.cpp; sourceTree = SOURCE_ROOT; };
+		CAB54628908449228BCF2D37 /* ptr_vector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ptr_vector.h; path = src/ptr_vector.h; sourceTree = SOURCE_ROOT; };
+		D030F7919AC3475482EF5CAD /* graphbuilder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = graphbuilder.h; path = "include/yaml-cpp/contrib/graphbuilder.h"; sourceTree = SOURCE_ROOT; };
+		D856DF735A2C4DB2B4D6F868 /* scantag.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = scantag.h; path = src/scantag.h; sourceTree = SOURCE_ROOT; };
+		D8D441A08B5A4054B6E1084D /* collectionstack.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = collectionstack.h; path = src/collectionstack.h; sourceTree = SOURCE_ROOT; };
+		DC4F6F6098D4404783834B35 /* traits.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = traits.h; path = "include/yaml-cpp/traits.h"; sourceTree = SOURCE_ROOT; };
+		DD7FFF1D0E204102A0C293BC /* gtest-all.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "gtest-all.cc"; path = "test/gmock-1.7.0/gtest/src/gtest-all.cc"; sourceTree = SOURCE_ROOT; };
+		DFCF0FF0C09345A3AE2632DE /* regex_test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = regex_test.cpp; path = test/regex_test.cpp; sourceTree = SOURCE_ROOT; };
+		DFD49402826D4C1F9D6C9A8C /* scanner.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = scanner.h; path = src/scanner.h; sourceTree = SOURCE_ROOT; };
+		E0A6908CA1C848CD99887BD9 /* gtest_main.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gtest_main.cc; path = "test/gmock-1.7.0/gtest/src/gtest_main.cc"; sourceTree = SOURCE_ROOT; };
+		E1001F95B5B94EACAE2D6A62 /* iterator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = iterator.h; path = "include/yaml-cpp/node/iterator.h"; sourceTree = SOURCE_ROOT; };
+		E134EB4E20C74D288BB355BC /* memory.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = memory.cpp; path = src/memory.cpp; sourceTree = SOURCE_ROOT; };
+		E17DC60005B045F3AA26BA52 /* read.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = read.cpp; path = util/read.cpp; sourceTree = SOURCE_ROOT; };
+		E21649B21A4948DF9D13325B /* regex_yaml.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = regex_yaml.cpp; path = src/regex_yaml.cpp; sourceTree = SOURCE_ROOT; };
+		E411E2CF5909415A9427D38F /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = util/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E6FDF2D484B0426D8DC229CB /* emit.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = emit.cpp; path = src/emit.cpp; sourceTree = SOURCE_ROOT; };
+		EF85294945494BCBB1E6D14D /* node_test.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = node_test.cpp; path = test/node/node_test.cpp; sourceTree = SOURCE_ROOT; };
+		FE9D17AFDDB0454F9BC90160 /* ostream_wrapper.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ostream_wrapper.cpp; path = src/ostream_wrapper.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0248DC24D7024DF8AE4310C2 = {
+			isa = PBXGroup;
+			children = (
+				B6080FD81E2DF90900F38B03 /* yaml-cpp */,
+				634B2F0CCB69484E81A04B99 /* Sources */,
+				9A5CE0E8951F4C069396350B /* Resources */,
+				C9439D0C604E48A1A00FAD95 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		099C227979B04CC89CEBEC38 /* format */ = {
+			isa = PBXGroup;
+			children = (
+				0BCCB88821E2420BAABEE512 /* CMake Rules */,
+				61551ADC12B8494699D5908C /* CMakeLists.txt */,
+			);
+			name = format;
+			sourceTree = "<group>";
+		};
+		0BCCB88821E2420BAABEE512 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		134E0D4315AF439694B2DE0E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD7FFF1D0E204102A0C293BC /* gtest-all.cc */,
+				C9030E31C4F74F649C39474B /* gmock-all.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		1C2E85DD31D745B09EF8E506 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				C7894D72E9F64486A6B4301C /* emitter_test.cpp */,
+				5E852BF3154B4EBA99A05FB2 /* encoding_test.cpp */,
+				02FC9B42388C454BB2501719 /* gen_emitter_test.cpp */,
+				300D83FB572440C3AAD98A10 /* handler_spec_test.cpp */,
+				6D8018F913AC4114BDD94530 /* handler_test.cpp */,
+				4F7C6BAE19E24C1A9207B6A9 /* load_node_test.cpp */,
+				33048782114042EA86C96DC7 /* node_spec_test.cpp */,
+				8F752C348FF64F25B2030281 /* main.cpp */,
+				EF85294945494BCBB1E6D14D /* node_test.cpp */,
+				B1C5A737AC0442FDA9409982 /* ostream_wrapper_test.cpp */,
+				DFCF0FF0C09345A3AE2632DE /* regex_test.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		2F18D6D9E3C74F839D890378 /* gtest_main */ = {
+			isa = PBXGroup;
+			children = (
+				9C218869B9A34BDF8B99D23C /* Source Files */,
+				5E0CA572A29A407995A1011D /* CMakeLists.txt */,
+			);
+			name = gtest_main;
+			sourceTree = "<group>";
+		};
+		30FF84C366034D4CBD516010 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				3140272604E443DCB54FE2E2 /* parse.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		39536E9BEF42464681AD19A1 /* gmock_main */ = {
+			isa = PBXGroup;
+			children = (
+				411BCC0D69E946C281FA56E6 /* Source Files */,
+				6ECEA86E14AD4EF096C8EDF6 /* CMakeLists.txt */,
+			);
+			name = gmock_main;
+			sourceTree = "<group>";
+		};
+		407C6A7BE8FB48568841E80F /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD561E83B1924871B9876731 /* binary.cpp */,
+				7583622EDA0C43B690963AD3 /* graphbuilder.cpp */,
+				10813DCD3DEB41319A74F1CC /* graphbuilderadapter.cpp */,
+				8CC4F40A96B342C3BACE3A7D /* convert.cpp */,
+				10CC1CF098DD4762966DB7DF /* directives.cpp */,
+				E6FDF2D484B0426D8DC229CB /* emit.cpp */,
+				1D6228E97E41483DA6611357 /* emitfromevents.cpp */,
+				CA89191AACE14EF48AA56DC7 /* emitter.cpp */,
+				1E092BA3BACB41159DC9F243 /* emitterstate.cpp */,
+				5DF2C42DDF1448B79E3FF5D7 /* emitterutils.cpp */,
+				2FC2C9B108F247AAA6224492 /* exp.cpp */,
+				E134EB4E20C74D288BB355BC /* memory.cpp */,
+				43C975F149884D46AD592C75 /* node.cpp */,
+				06D1E9EB2F1244A38C918AB2 /* node_data.cpp */,
+				15D001BF4BC14AB18D34D689 /* nodebuilder.cpp */,
+				45021400D2C141B3B3D1F916 /* nodeevents.cpp */,
+				9EEDC853339A4E1FA03523F1 /* null.cpp */,
+				FE9D17AFDDB0454F9BC90160 /* ostream_wrapper.cpp */,
+				1C1608E6F75B4DE3862CD92F /* parse.cpp */,
+				71C08D74A5D64CE4937E30EB /* parser.cpp */,
+				E21649B21A4948DF9D13325B /* regex_yaml.cpp */,
+				106704C030684A269DA57222 /* scanner.cpp */,
+				05993A576D8D46BEAF8D244F /* scanscalar.cpp */,
+				AB72C463F3AC437397DF5E39 /* scantag.cpp */,
+				488E5586D3CC4D62881CA1DF /* scantoken.cpp */,
+				19A402960E3C4B3B8CD5BBF3 /* simplekey.cpp */,
+				66FC46839A8D4143A9D1D975 /* singledocparser.cpp */,
+				4FC5BA9A17B74978A828365C /* stream.cpp */,
+				A2B3481C84F244A3BB19F13E /* tag.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		411BCC0D69E946C281FA56E6 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1580F783DFE4778991E60D2 /* gtest-all.cc */,
+				135D731F2E7B49199735256D /* gmock-all.cc */,
+				094C71AF94C24390A0C43FDD /* gmock_main.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		54B9A3A82DAA4A59A6226BA8 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				1EA727141B1947A59492CAA2 /* anchor.h */,
+				9A59EE75D61A4CAF99EAB1CD /* binary.h */,
+				3CCB83AEDA784DD0BFBF948F /* anchordict.h */,
+				D030F7919AC3475482EF5CAD /* graphbuilder.h */,
+				2017EB4313B94132988CB019 /* dll.h */,
+				305A9D66C1024FF5B9DE499D /* emitfromevents.h */,
+				B66C5ADDB0334761A496E15C /* emitter.h */,
+				6DD6289970A849D7AE5BB831 /* emitterdef.h */,
+				5FBEEF3C7FA74DA7B02E3DEB /* emittermanip.h */,
+				6269C80DEFEE4AEC8E34F8BC /* emitterstyle.h */,
+				3499F4B30DAC4816B5289A6E /* eventhandler.h */,
+				00DE673777C44BFFA3FAA275 /* exceptions.h */,
+				A99811F0B6B54F1B93DFF094 /* mark.h */,
+				8110EFBD8890489E88CFBC99 /* convert.h */,
+				1B87E9C36A3A4BC5932F2073 /* bool_type.h */,
+				102202D1B07B4DBEA04C59A8 /* impl.h */,
+				25175662D6C14EE997E89316 /* iterator.h */,
+				9361749289DA4FFF972E431B /* iterator_fwd.h */,
+				95F5E4D973094027A5F0CF29 /* memory.h */,
+				45C01FEE82314374BC7BCCB6 /* node.h */,
+				346758C798654EE987BF670E /* node_data.h */,
+				43AE1A368F9443AAA5D8B37D /* node_iterator.h */,
+				767B2F98C0EA4B34A51713D5 /* node_ref.h */,
+				1EC5EDD2F9E04F12AA455A94 /* emit.h */,
+				76FD3BB021C3416AAD3FE012 /* impl.h */,
+				E1001F95B5B94EACAE2D6A62 /* iterator.h */,
+				C42E2122EADD4F4D91FB76BA /* node.h */,
+				27B77CE279264DDAB2ABBDD6 /* parse.h */,
+				2BE60CF2864E47B082027F88 /* ptr.h */,
+				6A6A041DCF604AD8B64564CE /* type.h */,
+				860420EC73AB47B1A5AD5EED /* noncopyable.h */,
+				9B0E7D88068A4D4791F17F95 /* null.h */,
+				909AF89620824CF1993E5661 /* ostream_wrapper.h */,
+				9C27B2280308437ABF7619F1 /* parser.h */,
+				6D58B23694AE428A9586F890 /* stlemitter.h */,
+				DC4F6F6098D4404783834B35 /* traits.h */,
+				4F75F831D80D4887B9970167 /* yaml.h */,
+				D8D441A08B5A4054B6E1084D /* collectionstack.h */,
+				940582D0D4AC4BBD95759D6A /* graphbuilderadapter.h */,
+				3415BC0DF7584D0088FBBA7E /* directives.h */,
+				AD052FA5B3E94596A83D1E85 /* emitterstate.h */,
+				937413411C9B4080985ECECA /* emitterutils.h */,
+				0683509F579F4DE1B759F94A /* exp.h */,
+				9B0A822809144763834C35B6 /* indentation.h */,
+				A835EDD92B454990B64DD393 /* nodebuilder.h */,
+				1535FBEBB8A641CB9ECF1240 /* nodeevents.h */,
+				B20ED7A62E5D41D3AE0859A3 /* ptr_stack.h */,
+				CAB54628908449228BCF2D37 /* ptr_vector.h */,
+				2F674AA576994E19B1B84CA9 /* regex_yaml.h */,
+				C3998BA5C4DC4D308F08B5A3 /* regeximpl.h */,
+				DFD49402826D4C1F9D6C9A8C /* scanner.h */,
+				5207894DBD724C3DABB24D89 /* scanscalar.h */,
+				D856DF735A2C4DB2B4D6F868 /* scantag.h */,
+				402D4B878CE541A78774B41F /* setting.h */,
+				3D0389063120402EBAB604D2 /* singledocparser.h */,
+				7998AB8CDC474535A9F20EB0 /* stream.h */,
+				2D3BEDE26FA540B0BFD9E77A /* streamcharsource.h */,
+				7E7DA8F7B75646A1969A1873 /* stringsource.h */,
+				B29727DC8B3A4380B3AF025B /* tag.h */,
+				94A73FB0D2074EAAA81C9A05 /* token.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		634B2F0CCB69484E81A04B99 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				099C227979B04CC89CEBEC38 /* format */,
+				6A62137E5F71414690537CE4 /* yaml-cpp */,
+				CAF0F75E245446A8B16FC6BC /* ALL_BUILD */,
+				6FADB744F5A34ABF9B2CCBA0 /* ZERO_CHECK */,
+				920A92B343964073B8DBA8CF /* run-tests */,
+				39536E9BEF42464681AD19A1 /* gmock_main */,
+				C776E40366584EA384FE12DB /* gmock */,
+				2F18D6D9E3C74F839D890378 /* gtest_main */,
+				6E350737BA97499D903C327B /* gtest */,
+				7FC2C1AE21CE443A8BFAF0F0 /* read */,
+				FC96DE7152814D778663FD48 /* sandbox */,
+				FA62702F5E064E49AE98C2D9 /* parse */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		6A62137E5F71414690537CE4 /* yaml-cpp */ = {
+			isa = PBXGroup;
+			children = (
+				407C6A7BE8FB48568841E80F /* Source Files */,
+				54B9A3A82DAA4A59A6226BA8 /* Header Files */,
+				5A785A33CFBE46158CB128EC /* CMakeLists.txt */,
+			);
+			name = "yaml-cpp";
+			sourceTree = "<group>";
+		};
+		6E350737BA97499D903C327B /* gtest */ = {
+			isa = PBXGroup;
+			children = (
+				A049EE5CFF5846639E76597A /* Source Files */,
+				C173F2EE95404C4BB96DF7D4 /* CMakeLists.txt */,
+			);
+			name = gtest;
+			sourceTree = "<group>";
+		};
+		6FADB744F5A34ABF9B2CCBA0 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				B556D96316AA424285F497B4 /* CMake Rules */,
+				081F594D8F3047DC82CA251F /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		7FC2C1AE21CE443A8BFAF0F0 /* read */ = {
+			isa = PBXGroup;
+			children = (
+				829B7ED50432498089F2596C /* Source Files */,
+				E411E2CF5909415A9427D38F /* CMakeLists.txt */,
+			);
+			name = read;
+			sourceTree = "<group>";
+		};
+		829B7ED50432498089F2596C /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				E17DC60005B045F3AA26BA52 /* read.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		86B4F3BF37E74A1193499644 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				6468A9229C544E96908A0F95 /* sandbox.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		920A92B343964073B8DBA8CF /* run-tests */ = {
+			isa = PBXGroup;
+			children = (
+				1C2E85DD31D745B09EF8E506 /* Source Files */,
+				CA220F84EB9F48D9965210D0 /* Header Files */,
+				3CFC4E04A1DB4E9FB1393581 /* CMakeLists.txt */,
+			);
+			name = "run-tests";
+			sourceTree = "<group>";
+		};
+		9576FC5446964F4FBB6CA970 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		9A5CE0E8951F4C069396350B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9C218869B9A34BDF8B99D23C /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0A6908CA1C848CD99887BD9 /* gtest_main.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		A049EE5CFF5846639E76597A /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				238AE378474846B59DCEAA5D /* gtest-all.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		B556D96316AA424285F497B4 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		B6080FD81E2DF90900F38B03 /* yaml-cpp */ = {
+			isa = PBXGroup;
+			children = (
+				B6080FD91E2DF90900F38B03 /* anchor.h */,
+				B6080FDA1E2DF90900F38B03 /* binary.h */,
+				B6080FDB1E2DF90900F38B03 /* contrib */,
+				B6080FDE1E2DF90900F38B03 /* dll.h */,
+				B6080FDF1E2DF90900F38B03 /* emitfromevents.h */,
+				B6080FE01E2DF90900F38B03 /* emitter.h */,
+				B6080FE11E2DF90900F38B03 /* emitterdef.h */,
+				B6080FE21E2DF90900F38B03 /* emittermanip.h */,
+				B6080FE31E2DF90900F38B03 /* emitterstyle.h */,
+				B6080FE41E2DF90900F38B03 /* eventhandler.h */,
+				B6080FE51E2DF90900F38B03 /* exceptions.h */,
+				B6080FE61E2DF90900F38B03 /* mark.h */,
+				B6080FE71E2DF90900F38B03 /* node */,
+				B6080FFA1E2DF90900F38B03 /* noncopyable.h */,
+				B6080FFB1E2DF90900F38B03 /* null.h */,
+				B6080FFC1E2DF90900F38B03 /* ostream_wrapper.h */,
+				B6080FFD1E2DF90900F38B03 /* parser.h */,
+				B6080FFE1E2DF90900F38B03 /* stlemitter.h */,
+				B6080FFF1E2DF90900F38B03 /* traits.h */,
+				B60810001E2DF90900F38B03 /* yaml.h */,
+			);
+			name = "yaml-cpp";
+			path = "include/yaml-cpp";
+			sourceTree = "<group>";
+		};
+		B6080FDB1E2DF90900F38B03 /* contrib */ = {
+			isa = PBXGroup;
+			children = (
+				B6080FDC1E2DF90900F38B03 /* anchordict.h */,
+				B6080FDD1E2DF90900F38B03 /* graphbuilder.h */,
+			);
+			path = contrib;
+			sourceTree = "<group>";
+		};
+		B6080FE71E2DF90900F38B03 /* node */ = {
+			isa = PBXGroup;
+			children = (
+				B6080FE81E2DF90900F38B03 /* convert.h */,
+				B6080FE91E2DF90900F38B03 /* detail */,
+				B6080FF31E2DF90900F38B03 /* emit.h */,
+				B6080FF41E2DF90900F38B03 /* impl.h */,
+				B6080FF51E2DF90900F38B03 /* iterator.h */,
+				B6080FF61E2DF90900F38B03 /* node.h */,
+				B6080FF71E2DF90900F38B03 /* parse.h */,
+				B6080FF81E2DF90900F38B03 /* ptr.h */,
+				B6080FF91E2DF90900F38B03 /* type.h */,
+			);
+			path = node;
+			sourceTree = "<group>";
+		};
+		B6080FE91E2DF90900F38B03 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				B6080FEA1E2DF90900F38B03 /* bool_type.h */,
+				B6080FEB1E2DF90900F38B03 /* impl.h */,
+				B6080FEC1E2DF90900F38B03 /* iterator.h */,
+				B6080FED1E2DF90900F38B03 /* iterator_fwd.h */,
+				B6080FEE1E2DF90900F38B03 /* memory.h */,
+				B6080FEF1E2DF90900F38B03 /* node.h */,
+				B6080FF01E2DF90900F38B03 /* node_data.h */,
+				B6080FF11E2DF90900F38B03 /* node_iterator.h */,
+				B6080FF21E2DF90900F38B03 /* node_ref.h */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		C776E40366584EA384FE12DB /* gmock */ = {
+			isa = PBXGroup;
+			children = (
+				134E0D4315AF439694B2DE0E /* Source Files */,
+				B3813B2D2B0F40A59E6A72D2 /* CMakeLists.txt */,
+			);
+			name = gmock;
+			sourceTree = "<group>";
+		};
+		C9439D0C604E48A1A00FAD95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EB1BCA7051146B3B3F4BF70 /* libyaml-cpp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA220F84EB9F48D9965210D0 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				A115E5B0A3224B3992C790AB /* handler_test.h */,
+				79F7315791884BEC8EB77C6F /* mock_event_handler.h */,
+				3ECC1B0A7B4E444D80090163 /* specexamples.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		CAF0F75E245446A8B16FC6BC /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				9576FC5446964F4FBB6CA970 /* CMake Rules */,
+				95B88947E86C441B8EDECDEB /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		FA62702F5E064E49AE98C2D9 /* parse */ = {
+			isa = PBXGroup;
+			children = (
+				30FF84C366034D4CBD516010 /* Source Files */,
+				3384601FE3A444A3A5A81A1C /* CMakeLists.txt */,
+			);
+			name = parse;
+			sourceTree = "<group>";
+		};
+		FC96DE7152814D778663FD48 /* sandbox */ = {
+			isa = PBXGroup;
+			children = (
+				86B4F3BF37E74A1193499644 /* Source Files */,
+				5B68AE540DA5421FBD59F603 /* CMakeLists.txt */,
+			);
+			name = sandbox;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2B456980DD9449348DAC76EC /* yaml-cpp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11D2FF2FF3DD4604A52C8C1A /* Build configuration list for PBXNativeTarget "yaml-cpp" */;
+			buildPhases = (
+				4D431EBDA82E4FC995E2D6E6 /* Sources */,
+				B60810161E2DFA7300F38B03 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "yaml-cpp";
+			productName = "yaml-cpp";
+			productReference = 5EB1BCA7051146B3B3F4BF70 /* libyaml-cpp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1577B98E8934C65A0256F85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0800;
+			};
+			buildConfigurationList = EE25E635B7B84943A57FC84F /* Build configuration list for PBXProject "YAML_CPP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0248DC24D7024DF8AE4310C2;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				2B456980DD9449348DAC76EC /* yaml-cpp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B60810161E2DFA7300F38B03 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -R \"$PROJECT_DIR/include/yaml-cpp\" \"$PROJECT_DIR/../../include/yaml-cpp\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D431EBDA82E4FC995E2D6E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7928ABF86D9F42AA96D6E55A /* binary.cpp in Sources */,
+				665B49BD15874BD3A5A73716 /* graphbuilder.cpp in Sources */,
+				DA837108618B4970A1DD451F /* graphbuilderadapter.cpp in Sources */,
+				259D10A858514139B9E4C05F /* convert.cpp in Sources */,
+				D2DF7FB8D7394A2F8B36F42E /* directives.cpp in Sources */,
+				6FF3DCF2EF044487A8FCE107 /* emit.cpp in Sources */,
+				B0D7616495144D8A8B115E69 /* emitfromevents.cpp in Sources */,
+				5B51DECC13354BF1A030B471 /* emitter.cpp in Sources */,
+				EF2CABFF1E244213B2A4B332 /* emitterstate.cpp in Sources */,
+				E5C3B705A4FF48CA9D1CE65A /* emitterutils.cpp in Sources */,
+				D55E126E05DC45B4891F1E5F /* exp.cpp in Sources */,
+				2F2ECD1B7D5A43E795C2E493 /* memory.cpp in Sources */,
+				E9995D31D9C84DAF9D94B13F /* node.cpp in Sources */,
+				AD1BACD378F541E6AD2DB29E /* node_data.cpp in Sources */,
+				BA38C6EE4470407DA5F1A4DA /* nodebuilder.cpp in Sources */,
+				4FA4FCA2A85140F39A9072FD /* nodeevents.cpp in Sources */,
+				274FE402889D4E53A202ECFF /* null.cpp in Sources */,
+				0245717B5E984374A31A8C7E /* ostream_wrapper.cpp in Sources */,
+				E858A4FA9B00429A8EB1FD7D /* parse.cpp in Sources */,
+				07699F1DCB4340FE991C3587 /* parser.cpp in Sources */,
+				CA0C07E40AB945A1A674B1E1 /* regex_yaml.cpp in Sources */,
+				5E0B7D393A194551A18E29CE /* scanner.cpp in Sources */,
+				DA69620097C7437D86178491 /* scanscalar.cpp in Sources */,
+				1003F047E47144739554D960 /* scantag.cpp in Sources */,
+				A9C985C36B97452DA973E070 /* scantoken.cpp in Sources */,
+				2DF28E514B444D7F8294165E /* simplekey.cpp in Sources */,
+				527A29EC760C44A08641E31B /* singledocparser.cpp in Sources */,
+				07DBA48CA4364DAC91568ABA /* stream.cpp in Sources */,
+				532646F960AB4C77A2C2CB99 /* tag.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0495309315A14239B17DA9B9 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = MinSizeRel;
+		};
+		168A79E7446C4DD19E77A196 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/src",
+					"$(PROJECT_DIR)/include",
+				);
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-pedantic",
+					"-Wno-long-long",
+					"-std=c++11",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "yaml-cpp";
+				PUBLIC_HEADERS_FOLDER_PATH = "yaml-cpp";
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		2326B3AD0F974E6DBFC512B5 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/src",
+					"$(PROJECT_DIR)/include",
+				);
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-pedantic",
+					"-Wno-long-long",
+					"-std=c++11",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "yaml-cpp";
+				PUBLIC_HEADERS_FOLDER_PATH = "yaml-cpp";
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		23547B45271046488ED1DF41 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/src",
+					"$(PROJECT_DIR)/include",
+				);
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-pedantic",
+					"-Wno-long-long",
+					"-std=c++11",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "yaml-cpp";
+				PUBLIC_HEADERS_FOLDER_PATH = "yaml-cpp";
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		7D9C54F4ABFE45109D603630 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		8E02BF97E5694F1E8DC47597 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9BA8D294E7934CC7A38C0EEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = "'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/src",
+					"$(PROJECT_DIR)/include",
+				);
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-Wall",
+					"-Wextra",
+					"-pedantic",
+					"-Wno-long-long",
+					"-std=c++11",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "yaml-cpp";
+				PUBLIC_HEADERS_FOLDER_PATH = "yaml-cpp";
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		FDCCCE26D02F47F08C629BD8 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11D2FF2FF3DD4604A52C8C1A /* Build configuration list for PBXNativeTarget "yaml-cpp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				168A79E7446C4DD19E77A196 /* Debug */,
+				9BA8D294E7934CC7A38C0EEA /* Release */,
+				23547B45271046488ED1DF41 /* MinSizeRel */,
+				2326B3AD0F974E6DBFC512B5 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		EE25E635B7B84943A57FC84F /* Build configuration list for PBXProject "YAML_CPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E02BF97E5694F1E8DC47597 /* Debug */,
+				7D9C54F4ABFE45109D603630 /* Release */,
+				0495309315A14239B17DA9B9 /* MinSizeRel */,
+				FDCCCE26D02F47F08C629BD8 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C1577B98E8934C65A0256F85 /* Project object */;
+}

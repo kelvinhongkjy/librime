@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E152F4BE36A4F04B29A888E /* vlog_is_on.cc in Sources */ = {isa = PBXBuildFile; fileRef = B4816105F50D4E45B58E32CB /* vlog_is_on.cc */; settings = {COMPILER_FLAGS = ""; }; };
+		4E6FC0CC7ED542C582DB9B7E /* logging.cc in Sources */ = {isa = PBXBuildFile; fileRef = CC8125192DE14B67AAA7BD9A /* logging.cc */; settings = {COMPILER_FLAGS = ""; }; };
+		5D1D0C9EBEBA4B1190C1A2C1 /* signalhandler.cc in Sources */ = {isa = PBXBuildFile; fileRef = D34567322DD64BB8BA397B75 /* signalhandler.cc */; settings = {COMPILER_FLAGS = ""; }; };
+		659B5A31118E4647A9B9F232 /* symbolize.cc in Sources */ = {isa = PBXBuildFile; fileRef = B0A196D1A3444F3693BC4AED /* symbolize.cc */; settings = {COMPILER_FLAGS = ""; }; };
+		B2261FB4E6464E30A0FF8F22 /* utilities.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1098732CC8F9476D8B07F4C6 /* utilities.cc */; settings = {COMPILER_FLAGS = ""; }; };
+		B6080F661E2DE41800F38B03 /* log_severity.h in Headers */ = {isa = PBXBuildFile; fileRef = 74CE262C957F485AAB804B75 /* log_severity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6080F671E2DE41800F38B03 /* logging.h in Headers */ = {isa = PBXBuildFile; fileRef = 981C9207E2F54520851BB169 /* logging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6080F681E2DE41800F38B03 /* raw_logging.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AC41B40BA8D4E29A0B523F2 /* raw_logging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6080F691E2DE41800F38B03 /* stl_logging.h in Headers */ = {isa = PBXBuildFile; fileRef = F91D282656CE4ABCB95948BF /* stl_logging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6080F6A1E2DE41800F38B03 /* vlog_is_on.h in Headers */ = {isa = PBXBuildFile; fileRef = 78737229FEF04B59AB55BA3A /* vlog_is_on.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF47B923765A4852B154E117 /* demangle.cc in Sources */ = {isa = PBXBuildFile; fileRef = D9F8259E4D7A44A281ECDF1F /* demangle.cc */; settings = {COMPILER_FLAGS = ""; }; };
+		E197EB6DF76140BC97187591 /* raw_logging.cc in Sources */ = {isa = PBXBuildFile; fileRef = 182D2366355E491FAD8085B3 /* raw_logging.cc */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D59AE1EA6B34634921FD4EC /* symbolize_unittest.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = symbolize_unittest.cc; path = src/symbolize_unittest.cc; sourceTree = SOURCE_ROOT; };
+		1098732CC8F9476D8B07F4C6 /* utilities.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = utilities.cc; path = src/utilities.cc; sourceTree = SOURCE_ROOT; };
+		182D2366355E491FAD8085B3 /* raw_logging.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = raw_logging.cc; path = src/raw_logging.cc; sourceTree = SOURCE_ROOT; };
+		24335EFBF7E24C28825EC844 /* logging_unittest.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = logging_unittest.cc; path = src/logging_unittest.cc; sourceTree = SOURCE_ROOT; };
+		2AC41B40BA8D4E29A0B523F2 /* raw_logging.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = raw_logging.h; path = xcode/glog/raw_logging.h; sourceTree = SOURCE_ROOT; };
+		2B943ACC99964E20A999072B /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		3AF0A48013474826A0638933 /* stl_logging_unittest.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stl_logging_unittest.cc; path = src/stl_logging_unittest.cc; sourceTree = SOURCE_ROOT; };
+		50537E5A6E4E40DDAB91179B /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5E437565766E4CFD81FF807C /* utilities.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = utilities.h; path = src/utilities.h; sourceTree = SOURCE_ROOT; };
+		68BC0C3299D44039A4B97B1A /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		69CDE32D66E94D3594CBD24D /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		6D0C89B737E34109B7F5A202 /* utilities_unittest.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = utilities_unittest.cc; path = src/utilities_unittest.cc; sourceTree = SOURCE_ROOT; };
+		6D706EA5035D4491AD06EE1C /* mutex.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = mutex.h; path = src/base/mutex.h; sourceTree = SOURCE_ROOT; };
+		74CE262C957F485AAB804B75 /* log_severity.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = log_severity.h; path = src/glog/log_severity.h; sourceTree = SOURCE_ROOT; };
+		78737229FEF04B59AB55BA3A /* vlog_is_on.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = vlog_is_on.h; path = xcode/glog/vlog_is_on.h; sourceTree = SOURCE_ROOT; };
+		7E3679A4E04947A5AAFACEB6 /* stacktrace_unittest.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stacktrace_unittest.cc; path = src/stacktrace_unittest.cc; sourceTree = SOURCE_ROOT; };
+		8788B327920F48F99935D353 /* demangle_unittest.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = demangle_unittest.cc; path = src/demangle_unittest.cc; sourceTree = SOURCE_ROOT; };
+		8938E1A28CE94090A1D8B9B6 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8C66F39A6D364E68A1261520 /* libglog.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libglog.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		981C9207E2F54520851BB169 /* logging.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = logging.h; path = xcode/glog/logging.h; sourceTree = SOURCE_ROOT; };
+		A302DC6D96754932A81AFBDD /* googleinit.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = googleinit.h; path = src/base/googleinit.h; sourceTree = SOURCE_ROOT; };
+		AB0C66DCB52944179B4BB58F /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		AEE2088FE9784501B3F38A27 /* config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = config.h; path = xcode/config.h; sourceTree = SOURCE_ROOT; };
+		B0A196D1A3444F3693BC4AED /* symbolize.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = symbolize.cc; path = src/symbolize.cc; sourceTree = SOURCE_ROOT; };
+		B1B3DF774158417A8B78DE8B /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B4816105F50D4E45B58E32CB /* vlog_is_on.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = vlog_is_on.cc; path = src/vlog_is_on.cc; sourceTree = SOURCE_ROOT; };
+		BB3034C775EE41BBB40AEBEA /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C9831D0ABD4748BDAB6397FA /* symbolize.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = symbolize.h; path = src/symbolize.h; sourceTree = SOURCE_ROOT; };
+		CC8125192DE14B67AAA7BD9A /* logging.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = logging.cc; path = src/logging.cc; sourceTree = SOURCE_ROOT; };
+		CEDA7E9A1007402D965296E6 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		CF09A5A6FC454FEDB74E2FF4 /* signalhandler_unittest.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = signalhandler_unittest.cc; path = src/signalhandler_unittest.cc; sourceTree = SOURCE_ROOT; };
+		D34567322DD64BB8BA397B75 /* signalhandler.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = signalhandler.cc; path = src/signalhandler.cc; sourceTree = SOURCE_ROOT; };
+		D9F8259E4D7A44A281ECDF1F /* demangle.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = demangle.cc; path = src/demangle.cc; sourceTree = SOURCE_ROOT; };
+		DB1BAA392BAF40718649983D /* commandlineflags.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = commandlineflags.h; path = src/base/commandlineflags.h; sourceTree = SOURCE_ROOT; };
+		DDCAB48B62FA409EA0F79C32 /* demangle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = demangle.h; path = src/demangle.h; sourceTree = SOURCE_ROOT; };
+		F833C78BFDFE410DB740EF4F /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F91D282656CE4ABCB95948BF /* stl_logging.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = stl_logging.h; path = xcode/glog/stl_logging.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		00E7D7B1153145E384F47245 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				3AF0A48013474826A0638933 /* stl_logging_unittest.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		04DF1DEF2D494BCD9F866C10 /* stl_logging_unittest */ = {
+			isa = PBXGroup;
+			children = (
+				00E7D7B1153145E384F47245 /* Source Files */,
+				BB3034C775EE41BBB40AEBEA /* CMakeLists.txt */,
+			);
+			name = stl_logging_unittest;
+			sourceTree = "<group>";
+		};
+		102332A452714CC3A1E56D72 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E3679A4E04947A5AAFACEB6 /* stacktrace_unittest.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		17AB5882E95147E4A43A9BCF /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB1BAA392BAF40718649983D /* commandlineflags.h */,
+				A302DC6D96754932A81AFBDD /* googleinit.h */,
+				6D706EA5035D4491AD06EE1C /* mutex.h */,
+				DDCAB48B62FA409EA0F79C32 /* demangle.h */,
+				74CE262C957F485AAB804B75 /* log_severity.h */,
+				C9831D0ABD4748BDAB6397FA /* symbolize.h */,
+				5E437565766E4CFD81FF807C /* utilities.h */,
+				AEE2088FE9784501B3F38A27 /* config.h */,
+				981C9207E2F54520851BB169 /* logging.h */,
+				2AC41B40BA8D4E29A0B523F2 /* raw_logging.h */,
+				F91D282656CE4ABCB95948BF /* stl_logging.h */,
+				78737229FEF04B59AB55BA3A /* vlog_is_on.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		27531D44AB1D4575B345BE08 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				504D47C81BB0496EBEE8AFB2 /* CMake Rules */,
+				68BC0C3299D44039A4B97B1A /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		32DB3A9EB80D4AB2B5AD163D /* demangle_unittest */ = {
+			isa = PBXGroup;
+			children = (
+				411730144A564429BC424F9C /* Source Files */,
+				B1B3DF774158417A8B78DE8B /* CMakeLists.txt */,
+			);
+			name = demangle_unittest;
+			sourceTree = "<group>";
+		};
+		345185EB81E041FDA66CA80C /* stacktrace_unittest */ = {
+			isa = PBXGroup;
+			children = (
+				102332A452714CC3A1E56D72 /* Source Files */,
+				2B943ACC99964E20A999072B /* CMakeLists.txt */,
+			);
+			name = stacktrace_unittest;
+			sourceTree = "<group>";
+		};
+		411730144A564429BC424F9C /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				8788B327920F48F99935D353 /* demangle_unittest.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		42000749BEE343188178B34D /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				BC60166E280142F080433001 /* CMake Rules */,
+				AB0C66DCB52944179B4BB58F /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		504D47C81BB0496EBEE8AFB2 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		616F4FB4B1BB47D2AFC71EFB /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D0C89B737E34109B7F5A202 /* utilities_unittest.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		68BD287926EA40C1AF63DB9F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				78B3DEF16CF54276AAD4391B /* utilities_unittest */,
+				F6466DCE99D946B8B285D0FF /* signalhandler_unittest */,
+				345185EB81E041FDA66CA80C /* stacktrace_unittest */,
+				8E92A92F38CF4461BAC7646F /* glog */,
+				BD98F6E5AC8F4CB597248A94 /* logging_unittest */,
+				908AC4B8E13E4C0A978C92CF /* symbolize_unittest */,
+				04DF1DEF2D494BCD9F866C10 /* stl_logging_unittest */,
+				32DB3A9EB80D4AB2B5AD163D /* demangle_unittest */,
+				42000749BEE343188178B34D /* ALL_BUILD */,
+				27531D44AB1D4575B345BE08 /* ZERO_CHECK */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		729BBA26DEF344AA8B8D486F = {
+			isa = PBXGroup;
+			children = (
+				68BD287926EA40C1AF63DB9F /* Sources */,
+				EF27422E738A4255B059B99E /* Resources */,
+				877EB6A2AFC14EAD860EF230 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78B3DEF16CF54276AAD4391B /* utilities_unittest */ = {
+			isa = PBXGroup;
+			children = (
+				616F4FB4B1BB47D2AFC71EFB /* Source Files */,
+				50537E5A6E4E40DDAB91179B /* CMakeLists.txt */,
+			);
+			name = utilities_unittest;
+			sourceTree = "<group>";
+		};
+		7A279CD5EA0849E1A72FDA2E /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				0D59AE1EA6B34634921FD4EC /* symbolize_unittest.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		877EB6A2AFC14EAD860EF230 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C66F39A6D364E68A1261520 /* libglog.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E92A92F38CF4461BAC7646F /* glog */ = {
+			isa = PBXGroup;
+			children = (
+				17AB5882E95147E4A43A9BCF /* Header Files */,
+				BAE68F8D99AC4876A3DE7B32 /* Source Files */,
+				8938E1A28CE94090A1D8B9B6 /* CMakeLists.txt */,
+			);
+			name = glog;
+			sourceTree = "<group>";
+		};
+		908AC4B8E13E4C0A978C92CF /* symbolize_unittest */ = {
+			isa = PBXGroup;
+			children = (
+				7A279CD5EA0849E1A72FDA2E /* Source Files */,
+				F833C78BFDFE410DB740EF4F /* CMakeLists.txt */,
+			);
+			name = symbolize_unittest;
+			sourceTree = "<group>";
+		};
+		99CF9F92C5694D40BD77FC26 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF09A5A6FC454FEDB74E2FF4 /* signalhandler_unittest.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		9CEE9DD902714D34AE96D381 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				24335EFBF7E24C28825EC844 /* logging_unittest.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		BAE68F8D99AC4876A3DE7B32 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9F8259E4D7A44A281ECDF1F /* demangle.cc */,
+				CC8125192DE14B67AAA7BD9A /* logging.cc */,
+				182D2366355E491FAD8085B3 /* raw_logging.cc */,
+				D34567322DD64BB8BA397B75 /* signalhandler.cc */,
+				B0A196D1A3444F3693BC4AED /* symbolize.cc */,
+				1098732CC8F9476D8B07F4C6 /* utilities.cc */,
+				B4816105F50D4E45B58E32CB /* vlog_is_on.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		BC60166E280142F080433001 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		BD98F6E5AC8F4CB597248A94 /* logging_unittest */ = {
+			isa = PBXGroup;
+			children = (
+				9CEE9DD902714D34AE96D381 /* Source Files */,
+				69CDE32D66E94D3594CBD24D /* CMakeLists.txt */,
+			);
+			name = logging_unittest;
+			sourceTree = "<group>";
+		};
+		EF27422E738A4255B059B99E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F6466DCE99D946B8B285D0FF /* signalhandler_unittest */ = {
+			isa = PBXGroup;
+			children = (
+				99CF9F92C5694D40BD77FC26 /* Source Files */,
+				CEDA7E9A1007402D965296E6 /* CMakeLists.txt */,
+			);
+			name = signalhandler_unittest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B608FBA41E2DDF6B00F38B03 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6080F661E2DE41800F38B03 /* log_severity.h in Headers */,
+				B6080F671E2DE41800F38B03 /* logging.h in Headers */,
+				B6080F681E2DE41800F38B03 /* raw_logging.h in Headers */,
+				B6080F691E2DE41800F38B03 /* stl_logging.h in Headers */,
+				B6080F6A1E2DE41800F38B03 /* vlog_is_on.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3E5839A854C240E89C15B1F2 /* glog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8BAB966C179546F4B2BECD5B /* Build configuration list for PBXNativeTarget "glog" */;
+			buildPhases = (
+				0B37B04C9DEF49D6B185B3D2 /* Sources */,
+				B608FBA41E2DDF6B00F38B03 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = glog;
+			productName = glog;
+			productReference = 8C66F39A6D364E68A1261520 /* libglog.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD5E99BFB47F442C8390B9BB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0800;
+			};
+			buildConfigurationList = 43FDE8F8906F422790F087E4 /* Build configuration list for PBXProject "google-glog" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 729BBA26DEF344AA8B8D486F;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				3E5839A854C240E89C15B1F2 /* glog */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0B37B04C9DEF49D6B185B3D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF47B923765A4852B154E117 /* demangle.cc in Sources */,
+				4E6FC0CC7ED542C582DB9B7E /* logging.cc in Sources */,
+				E197EB6DF76140BC97187591 /* raw_logging.cc in Sources */,
+				5D1D0C9EBEBA4B1190C1A2C1 /* signalhandler.cc in Sources */,
+				659B5A31118E4647A9B9F232 /* symbolize.cc in Sources */,
+				B2261FB4E6464E30A0FF8F22 /* utilities.cc in Sources */,
+				0E152F4BE36A4F04B29A888E /* vlog_is_on.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		409D6CF86AF64A768B148DA6 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'GOOGLE_GLOG_DLL_DECL='",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/src",
+				);
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-fvisibility=default",
+					"-fvisibility-inlines-hidden",
+					"-Wno-unnamed-type-template-args",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glog;
+				PUBLIC_HEADERS_FOLDER_PATH = ../../../../include/glog;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		534E6B6D3C654AAEB439E49D /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = RelWithDebInfo;
+		};
+		8C5BA41D1624464E9DFCC934 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = MinSizeRel;
+		};
+		8E9CD648A74C4443A11ACA24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		BC73D6B75117450885152736 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'GOOGLE_GLOG_DLL_DECL='",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/src",
+				);
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-fvisibility=default",
+					"-fvisibility-inlines-hidden",
+					"-Wno-unnamed-type-template-args",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glog;
+				PUBLIC_HEADERS_FOLDER_PATH = ../../../../include/glog;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		CBF0E75ED1454E729C6D3C2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'GOOGLE_GLOG_DLL_DECL='",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/src",
+				);
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-fvisibility=default",
+					"-fvisibility-inlines-hidden",
+					"-Wno-unnamed-type-template-args",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glog;
+				PUBLIC_HEADERS_FOLDER_PATH = ../../../../include/glog;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		D1157381EFA64171A654695E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D60204FE131A45E68006AA25 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'GOOGLE_GLOG_DLL_DECL='",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/src",
+				);
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-fvisibility=default",
+					"-fvisibility-inlines-hidden",
+					"-Wno-unnamed-type-template-args",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = glog;
+				PUBLIC_HEADERS_FOLDER_PATH = ../../../../include/glog;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43FDE8F8906F422790F087E4 /* Build configuration list for PBXProject "google-glog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1157381EFA64171A654695E /* Debug */,
+				8E9CD648A74C4443A11ACA24 /* Release */,
+				8C5BA41D1624464E9DFCC934 /* MinSizeRel */,
+				534E6B6D3C654AAEB439E49D /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8BAB966C179546F4B2BECD5B /* Build configuration list for PBXNativeTarget "glog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC73D6B75117450885152736 /* Debug */,
+				CBF0E75ED1454E729C6D3C2D /* Release */,
+				409D6CF86AF64A768B148DA6 /* MinSizeRel */,
+				D60204FE131A45E68006AA25 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD5E99BFB47F442C8390B9BB /* Project object */;
+}

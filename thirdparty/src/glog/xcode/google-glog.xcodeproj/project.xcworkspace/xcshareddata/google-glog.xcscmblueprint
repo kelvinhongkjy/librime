@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "149A7B220E926990D2D2262034611D0A155AF00B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "149A7B220E926990D2D2262034611D0A155AF00B" : 9223372036854775807,
+    "9B74CCB0D915EDE0FAFF99E65D0D5B076DD1A012" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A94BD332-87AC-4446-99F7-64111C924B3F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "149A7B220E926990D2D2262034611D0A155AF00B" : "librime\/",
+    "9B74CCB0D915EDE0FAFF99E65D0D5B076DD1A012" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "google-glog",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "thirdparty\/src\/glog\/xcode\/google-glog.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:kelvinhongkjy\/librime.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "149A7B220E926990D2D2262034611D0A155AF00B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:kelvinhongkjy\/Prime.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9B74CCB0D915EDE0FAFF99E65D0D5B076DD1A012"
+    }
+  ]
+}

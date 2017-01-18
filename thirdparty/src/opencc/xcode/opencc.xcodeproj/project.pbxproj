@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		036C651AE81D4DC4B78976E6 /* PhraseExtract.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F93A6A432529404D9E3ECCD5 /* PhraseExtract.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		042A583215354E2E8F27FF5D /* Config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 15FBDBD7E8804171951EA23A /* Config.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		0DFBA5F3D87348E68BA79967 /* SimpleConverter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A0E30EE75AC44930906F928E /* SimpleConverter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1A43D6077AB0456FBEBCA577 /* UTF8StringSlice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DD4325D9D1F742D386B143DB /* UTF8StringSlice.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		1B21A54028384129A394DEB0 /* Segmentation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 01E473DC7DC342919FA89854 /* Segmentation.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2A5CEAA646084A64B43F7950 /* ConversionChain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB3E9C62179949BEB2D31A5A /* ConversionChain.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		2E21AF436D9F4CB39641F677 /* DictGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D69FF847982B4837A65504C3 /* DictGroup.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		3B3F5B66FFBF46FFAA6726FA /* Converter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 95BCF3B2F0FA4AA29AA63BB6 /* Converter.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		5F4F804D36864CBDA5688601 /* BinaryDict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6B3C52E1B3D42AD90881548 /* BinaryDict.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		62D5386E4707471FAFBBE180 /* TextDict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F159DBCD1B0D4B198EEE4F37 /* TextDict.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		733FB8A5552C460282A725BD /* UTF8Util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D1A44EAD843B46BEAB5E7A8E /* UTF8Util.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		79C33CB6F706481E8F87E8F9 /* Conversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8E3839FB6B6409A9D192EF0 /* Conversion.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B156E91BD70F40A5963375CC /* DictEntry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1205BF03412446ADB7A2967A /* DictEntry.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B428E490D6CE4D179E84DCA3 /* Dict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5032C4A3CAA84E5F97DFBE02 /* Dict.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		B60810191E2E040400F38B03 /* BinaryDict.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DB7ECA6693CC47EE9372AB91 /* BinaryDict.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B608101A1E2E040400F38B03 /* Common.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 922729A9ECAA4853A242DF6C /* Common.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B608101B1E2E040400F38B03 /* Config.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 65DFC4454A06451C9F6E9B2D /* Config.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B608101C1E2E040400F38B03 /* Conversion.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E7CE85FEF41D47B49F768E5C /* Conversion.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B608101D1E2E040400F38B03 /* ConversionChain.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8B3BCA2CB2204761BFCB52AC /* ConversionChain.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B608101E1E2E040400F38B03 /* Converter.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F38A14BC4C1040938134DCCE /* Converter.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B608101F1E2E040400F38B03 /* DartsDict.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B5A28F2B6BC049BD9BBBCD56 /* DartsDict.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B60810201E2E040400F38B03 /* Dict.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 0EABFBDB5A86421186C81442 /* Dict.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B60810211E2E040400F38B03 /* DictEntry.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E86FC7DEC798410780C0297A /* DictEntry.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B60810221E2E040400F38B03 /* DictGroup.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1A6CF7ED652D4D5AA000032A /* DictGroup.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B60810231E2E040400F38B03 /* Exception.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4D0358E1CD794037BD5B49F6 /* Exception.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B60810241E2E040400F38B03 /* Export.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AAFAE5F8FEFB4559A0EC730B /* Export.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B60810251E2E040400F38B03 /* Lexicon.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 95BAB0CC9A924933822C39E8 /* Lexicon.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B60810261E2E040400F38B03 /* MaxMatchSegmentation.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 20FBEFC310144E739590F16A /* MaxMatchSegmentation.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B60810271E2E040400F38B03 /* Optional.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E0119FA2F6FB4E9BB7FD8CCC /* Optional.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B60810281E2E040400F38B03 /* PhraseExtract.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DDC3228E44A0413A99DBD4AB /* PhraseExtract.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B60810291E2E040400F38B03 /* Segmentation.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B2FFEFC3BCAC4F4890893958 /* Segmentation.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B608102A1E2E040400F38B03 /* Segments.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 05CEB0F60C9746B4B7E78711 /* Segments.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B608102B1E2E040400F38B03 /* SerializableDict.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D1F84EBE637A4B55B96DB951 /* SerializableDict.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B608102C1E2E040400F38B03 /* SimpleConverter.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A73B7D70A66E4FC99AA466D4 /* SimpleConverter.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B608102D1E2E040400F38B03 /* TextDict.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D22E553D91C540FBA651A363 /* TextDict.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B608102E1E2E040400F38B03 /* UTF8StringSlice.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F8CAA79D48D7424A8525B0D9 /* UTF8StringSlice.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B608102F1E2E040400F38B03 /* UTF8Util.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 38F9281BA06546B1AB4E1F85 /* UTF8Util.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		B60810301E2E040400F38B03 /* opencc.h in Headers */ = {isa = PBXBuildFile; fileRef = EC66AD311DE84F84B5696010 /* opencc.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2014FB469734EABBEA01796 /* MaxMatchSegmentation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D098BC647B894F86A3E82BFB /* MaxMatchSegmentation.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+		F1B0AC2B3AC84A66A50BC7BB /* DartsDict.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BB92E4EF256B4BABBC631D73 /* DartsDict.cpp */; settings = {COMPILER_FLAGS = ""; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		01E473DC7DC342919FA89854 /* Segmentation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Segmentation.cpp; path = src/Segmentation.cpp; sourceTree = SOURCE_ROOT; };
+		05CEB0F60C9746B4B7E78711 /* Segments.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Segments.hpp; path = src/Segments.hpp; sourceTree = SOURCE_ROOT; };
+		0D62964D11AF4CF2A27D351C /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0EABFBDB5A86421186C81442 /* Dict.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Dict.hpp; path = src/Dict.hpp; sourceTree = SOURCE_ROOT; };
+		11739F6E379F4087816A32E2 /* libopencc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libopencc.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1205BF03412446ADB7A2967A /* DictEntry.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DictEntry.cpp; path = src/DictEntry.cpp; sourceTree = SOURCE_ROOT; };
+		15FBDBD7E8804171951EA23A /* Config.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Config.cpp; path = src/Config.cpp; sourceTree = SOURCE_ROOT; };
+		1A6CF7ED652D4D5AA000032A /* DictGroup.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = DictGroup.hpp; path = src/DictGroup.hpp; sourceTree = SOURCE_ROOT; };
+		20FBEFC310144E739590F16A /* MaxMatchSegmentation.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = MaxMatchSegmentation.hpp; path = src/MaxMatchSegmentation.hpp; sourceTree = SOURCE_ROOT; };
+		2B87809EE9E1426785EE640A /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/tools/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		38F9281BA06546B1AB4E1F85 /* UTF8Util.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = UTF8Util.hpp; path = src/UTF8Util.hpp; sourceTree = SOURCE_ROOT; };
+		4843E760D2474F47B041F777 /* CommandLine.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = CommandLine.cpp; path = src/tools/CommandLine.cpp; sourceTree = SOURCE_ROOT; };
+		4B3EBDE9189F459E965E66D2 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/tools/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		4D0358E1CD794037BD5B49F6 /* Exception.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Exception.hpp; path = src/Exception.hpp; sourceTree = SOURCE_ROOT; };
+		5032C4A3CAA84E5F97DFBE02 /* Dict.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Dict.cpp; path = src/Dict.cpp; sourceTree = SOURCE_ROOT; };
+		65DFC4454A06451C9F6E9B2D /* Config.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Config.hpp; path = src/Config.hpp; sourceTree = SOURCE_ROOT; };
+		7A157F6DBF3247179EB9D3D8 /* DictConverter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DictConverter.cpp; path = src/tools/DictConverter.cpp; sourceTree = SOURCE_ROOT; };
+		7F082AC6682342CBAB8A9A2B /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = data/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		8B3BCA2CB2204761BFCB52AC /* ConversionChain.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = ConversionChain.hpp; path = src/ConversionChain.hpp; sourceTree = SOURCE_ROOT; };
+		8C7A3343B2BB4D859170307A /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		922729A9ECAA4853A242DF6C /* Common.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Common.hpp; path = src/Common.hpp; sourceTree = SOURCE_ROOT; };
+		95BAB0CC9A924933822C39E8 /* Lexicon.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Lexicon.hpp; path = src/Lexicon.hpp; sourceTree = SOURCE_ROOT; };
+		95BCF3B2F0FA4AA29AA63BB6 /* Converter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Converter.cpp; path = src/Converter.cpp; sourceTree = SOURCE_ROOT; };
+		A0E30EE75AC44930906F928E /* SimpleConverter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = SimpleConverter.cpp; path = src/SimpleConverter.cpp; sourceTree = SOURCE_ROOT; };
+		A73B7D70A66E4FC99AA466D4 /* SimpleConverter.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = SimpleConverter.hpp; path = src/SimpleConverter.hpp; sourceTree = SOURCE_ROOT; };
+		AAFAE5F8FEFB4559A0EC730B /* Export.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Export.hpp; path = src/Export.hpp; sourceTree = SOURCE_ROOT; };
+		AB3E9C62179949BEB2D31A5A /* ConversionChain.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ConversionChain.cpp; path = src/ConversionChain.cpp; sourceTree = SOURCE_ROOT; };
+		B15644D2ED1C495E81DF778C /* PhraseExtract.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PhraseExtract.cpp; path = src/tools/PhraseExtract.cpp; sourceTree = SOURCE_ROOT; };
+		B2FFEFC3BCAC4F4890893958 /* Segmentation.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Segmentation.hpp; path = src/Segmentation.hpp; sourceTree = SOURCE_ROOT; };
+		B5A28F2B6BC049BD9BBBCD56 /* DartsDict.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = DartsDict.hpp; path = src/DartsDict.hpp; sourceTree = SOURCE_ROOT; };
+		B6B3C52E1B3D42AD90881548 /* BinaryDict.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = BinaryDict.cpp; path = src/BinaryDict.cpp; sourceTree = SOURCE_ROOT; };
+		BB92E4EF256B4BABBC631D73 /* DartsDict.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DartsDict.cpp; path = src/DartsDict.cpp; sourceTree = SOURCE_ROOT; };
+		BD7F9D57C3E04DCB8BB561AB /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C136A380D6F0419782DB8140 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		C84EDFC3F544483CBFA4F034 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D098BC647B894F86A3E82BFB /* MaxMatchSegmentation.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = MaxMatchSegmentation.cpp; path = src/MaxMatchSegmentation.cpp; sourceTree = SOURCE_ROOT; };
+		D1A44EAD843B46BEAB5E7A8E /* UTF8Util.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = UTF8Util.cpp; path = src/UTF8Util.cpp; sourceTree = SOURCE_ROOT; };
+		D1F84EBE637A4B55B96DB951 /* SerializableDict.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = SerializableDict.hpp; path = src/SerializableDict.hpp; sourceTree = SOURCE_ROOT; };
+		D22E553D91C540FBA651A363 /* TextDict.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = TextDict.hpp; path = src/TextDict.hpp; sourceTree = SOURCE_ROOT; };
+		D69FF847982B4837A65504C3 /* DictGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = DictGroup.cpp; path = src/DictGroup.cpp; sourceTree = SOURCE_ROOT; };
+		D8E3839FB6B6409A9D192EF0 /* Conversion.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Conversion.cpp; path = src/Conversion.cpp; sourceTree = SOURCE_ROOT; };
+		DB7ECA6693CC47EE9372AB91 /* BinaryDict.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = BinaryDict.hpp; path = src/BinaryDict.hpp; sourceTree = SOURCE_ROOT; };
+		DBF93BA7338F48799A8351E6 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; name = CMakeLists.txt; path = src/tools/CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DD4325D9D1F742D386B143DB /* UTF8StringSlice.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = UTF8StringSlice.cpp; path = src/UTF8StringSlice.cpp; sourceTree = SOURCE_ROOT; };
+		DDC3228E44A0413A99DBD4AB /* PhraseExtract.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = PhraseExtract.hpp; path = src/PhraseExtract.hpp; sourceTree = SOURCE_ROOT; };
+		E0119FA2F6FB4E9BB7FD8CCC /* Optional.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Optional.hpp; path = src/Optional.hpp; sourceTree = SOURCE_ROOT; };
+		E7CE85FEF41D47B49F768E5C /* Conversion.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Conversion.hpp; path = src/Conversion.hpp; sourceTree = SOURCE_ROOT; };
+		E86FC7DEC798410780C0297A /* DictEntry.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = DictEntry.hpp; path = src/DictEntry.hpp; sourceTree = SOURCE_ROOT; };
+		EC66AD311DE84F84B5696010 /* opencc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = opencc.h; path = src/opencc.h; sourceTree = SOURCE_ROOT; };
+		ED5C50AEDC0C4E34A90AC1D5 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F1506C28418F4B7382185FB0 /* CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F159DBCD1B0D4B198EEE4F37 /* TextDict.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = TextDict.cpp; path = src/TextDict.cpp; sourceTree = SOURCE_ROOT; };
+		F38A14BC4C1040938134DCCE /* Converter.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Converter.hpp; path = src/Converter.hpp; sourceTree = SOURCE_ROOT; };
+		F8CAA79D48D7424A8525B0D9 /* UTF8StringSlice.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = UTF8StringSlice.hpp; path = src/UTF8StringSlice.hpp; sourceTree = SOURCE_ROOT; };
+		F93A6A432529404D9E3ECCD5 /* PhraseExtract.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = PhraseExtract.cpp; path = src/PhraseExtract.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		00A76B45222747A197A10B84 /* ZERO_CHECK */ = {
+			isa = PBXGroup;
+			children = (
+				D9161A58803743A98E4FC0C6 /* CMake Rules */,
+				BD7F9D57C3E04DCB8BB561AB /* CMakeLists.txt */,
+			);
+			name = ZERO_CHECK;
+			sourceTree = "<group>";
+		};
+		0C8EB1E903634CC78D4F0399 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		1AE4BE09306B4EFDB98D1DEF /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		29D31CA6F6304F8CA76AAAEB /* libopencc */ = {
+			isa = PBXGroup;
+			children = (
+				824AAAA680AF4E03AFB26526 /* libopencc */,
+				0D62964D11AF4CF2A27D351C /* CMakeLists.txt */,
+			);
+			name = libopencc;
+			sourceTree = "<group>";
+		};
+		2FC367DA2A06455EA9009D58 /* Dictionaries */ = {
+			isa = PBXGroup;
+			children = (
+				9EE402525C6C4800BAB5564E /* CMake Rules */,
+				7F082AC6682342CBAB8A9A2B /* CMakeLists.txt */,
+			);
+			name = Dictionaries;
+			sourceTree = "<group>";
+		};
+		30594F07FCCB45B79559AC69 /* Continuous */ = {
+			isa = PBXGroup;
+			children = (
+				D1D584F1CFE94F8D80F77A04 /* CMake Rules */,
+				8C7A3343B2BB4D859170307A /* CMakeLists.txt */,
+			);
+			name = Continuous;
+			sourceTree = "<group>";
+		};
+		3F60711559AD4ED88BD76714 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11739F6E379F4087816A32E2 /* libopencc.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		412E5F882FBF428C954502EC /* Experimental */ = {
+			isa = PBXGroup;
+			children = (
+				FF0D0E8CC0CB440EAFF88073 /* CMake Rules */,
+				F1506C28418F4B7382185FB0 /* CMakeLists.txt */,
+			);
+			name = Experimental;
+			sourceTree = "<group>";
+		};
+		4A3D8A52CB934A1F8798B158 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4DF2F2FD7FA24C779E848529 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				7A157F6DBF3247179EB9D3D8 /* DictConverter.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		52D057B1AA4D475297EA4B3D /* opencc_dict */ = {
+			isa = PBXGroup;
+			children = (
+				4DF2F2FD7FA24C779E848529 /* Source Files */,
+				DBF93BA7338F48799A8351E6 /* CMakeLists.txt */,
+			);
+			name = opencc_dict;
+			sourceTree = "<group>";
+		};
+		5A23F32644C14363B2B2442D /* CTestDashboardTargets */ = {
+			isa = PBXGroup;
+			children = (
+				BAAE6585B41849208F562923 /* NightlyMemoryCheck */,
+				AF57C93605CB40B38B6FF4B0 /* Nightly */,
+				30594F07FCCB45B79559AC69 /* Continuous */,
+				412E5F882FBF428C954502EC /* Experimental */,
+			);
+			name = CTestDashboardTargets;
+			sourceTree = "<group>";
+		};
+		668A64AE60B24548BD98AEA4 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		824AAAA680AF4E03AFB26526 /* libopencc */ = {
+			isa = PBXGroup;
+			children = (
+				B6B3C52E1B3D42AD90881548 /* BinaryDict.cpp */,
+				DB7ECA6693CC47EE9372AB91 /* BinaryDict.hpp */,
+				922729A9ECAA4853A242DF6C /* Common.hpp */,
+				15FBDBD7E8804171951EA23A /* Config.cpp */,
+				65DFC4454A06451C9F6E9B2D /* Config.hpp */,
+				D8E3839FB6B6409A9D192EF0 /* Conversion.cpp */,
+				E7CE85FEF41D47B49F768E5C /* Conversion.hpp */,
+				AB3E9C62179949BEB2D31A5A /* ConversionChain.cpp */,
+				8B3BCA2CB2204761BFCB52AC /* ConversionChain.hpp */,
+				95BCF3B2F0FA4AA29AA63BB6 /* Converter.cpp */,
+				F38A14BC4C1040938134DCCE /* Converter.hpp */,
+				BB92E4EF256B4BABBC631D73 /* DartsDict.cpp */,
+				B5A28F2B6BC049BD9BBBCD56 /* DartsDict.hpp */,
+				5032C4A3CAA84E5F97DFBE02 /* Dict.cpp */,
+				0EABFBDB5A86421186C81442 /* Dict.hpp */,
+				1205BF03412446ADB7A2967A /* DictEntry.cpp */,
+				E86FC7DEC798410780C0297A /* DictEntry.hpp */,
+				D69FF847982B4837A65504C3 /* DictGroup.cpp */,
+				1A6CF7ED652D4D5AA000032A /* DictGroup.hpp */,
+				4D0358E1CD794037BD5B49F6 /* Exception.hpp */,
+				AAFAE5F8FEFB4559A0EC730B /* Export.hpp */,
+				95BAB0CC9A924933822C39E8 /* Lexicon.hpp */,
+				D098BC647B894F86A3E82BFB /* MaxMatchSegmentation.cpp */,
+				20FBEFC310144E739590F16A /* MaxMatchSegmentation.hpp */,
+				E0119FA2F6FB4E9BB7FD8CCC /* Optional.hpp */,
+				F93A6A432529404D9E3ECCD5 /* PhraseExtract.cpp */,
+				DDC3228E44A0413A99DBD4AB /* PhraseExtract.hpp */,
+				01E473DC7DC342919FA89854 /* Segmentation.cpp */,
+				B2FFEFC3BCAC4F4890893958 /* Segmentation.hpp */,
+				05CEB0F60C9746B4B7E78711 /* Segments.hpp */,
+				D1F84EBE637A4B55B96DB951 /* SerializableDict.hpp */,
+				A0E30EE75AC44930906F928E /* SimpleConverter.cpp */,
+				A73B7D70A66E4FC99AA466D4 /* SimpleConverter.hpp */,
+				F159DBCD1B0D4B198EEE4F37 /* TextDict.cpp */,
+				D22E553D91C540FBA651A363 /* TextDict.hpp */,
+				DD4325D9D1F742D386B143DB /* UTF8StringSlice.cpp */,
+				F8CAA79D48D7424A8525B0D9 /* UTF8StringSlice.hpp */,
+				D1A44EAD843B46BEAB5E7A8E /* UTF8Util.cpp */,
+				38F9281BA06546B1AB4E1F85 /* UTF8Util.hpp */,
+				EC66AD311DE84F84B5696010 /* opencc.h */,
+			);
+			name = libopencc;
+			sourceTree = "<group>";
+		};
+		9200A5AFF26848CC85C23E12 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				1AE4BE09306B4EFDB98D1DEF /* CMake Rules */,
+				C136A380D6F0419782DB8140 /* CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		958540524B4E41ABBCF66BBD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5A23F32644C14363B2B2442D /* CTestDashboardTargets */,
+				9200A5AFF26848CC85C23E12 /* ALL_BUILD */,
+				00A76B45222747A197A10B84 /* ZERO_CHECK */,
+				29D31CA6F6304F8CA76AAAEB /* libopencc */,
+				52D057B1AA4D475297EA4B3D /* opencc_dict */,
+				D922C9DB033F4E289448DA78 /* opencc_phrase_extract */,
+				B0C135084A234A3A9C5114F3 /* opencc */,
+				2FC367DA2A06455EA9009D58 /* Dictionaries */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		9EE402525C6C4800BAB5564E /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		A224BE5AF7AC4983BB42F2E4 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				B15644D2ED1C495E81DF778C /* PhraseExtract.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		AF57C93605CB40B38B6FF4B0 /* Nightly */ = {
+			isa = PBXGroup;
+			children = (
+				668A64AE60B24548BD98AEA4 /* CMake Rules */,
+				C84EDFC3F544483CBFA4F034 /* CMakeLists.txt */,
+			);
+			name = Nightly;
+			sourceTree = "<group>";
+		};
+		B0C135084A234A3A9C5114F3 /* opencc */ = {
+			isa = PBXGroup;
+			children = (
+				C7ABC2DDFB19429E966D5D29 /* Source Files */,
+				4B3EBDE9189F459E965E66D2 /* CMakeLists.txt */,
+			);
+			name = opencc;
+			sourceTree = "<group>";
+		};
+		BAAE6585B41849208F562923 /* NightlyMemoryCheck */ = {
+			isa = PBXGroup;
+			children = (
+				0C8EB1E903634CC78D4F0399 /* CMake Rules */,
+				ED5C50AEDC0C4E34A90AC1D5 /* CMakeLists.txt */,
+			);
+			name = NightlyMemoryCheck;
+			sourceTree = "<group>";
+		};
+		C7ABC2DDFB19429E966D5D29 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				4843E760D2474F47B041F777 /* CommandLine.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		D1D584F1CFE94F8D80F77A04 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		D65FCE059F924F12949B3E94 = {
+			isa = PBXGroup;
+			children = (
+				958540524B4E41ABBCF66BBD /* Sources */,
+				4A3D8A52CB934A1F8798B158 /* Resources */,
+				3F60711559AD4ED88BD76714 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9161A58803743A98E4FC0C6 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		D922C9DB033F4E289448DA78 /* opencc_phrase_extract */ = {
+			isa = PBXGroup;
+			children = (
+				A224BE5AF7AC4983BB42F2E4 /* Source Files */,
+				2B87809EE9E1426785EE640A /* CMakeLists.txt */,
+			);
+			name = opencc_phrase_extract;
+			sourceTree = "<group>";
+		};
+		FF0D0E8CC0CB440EAFF88073 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B60810181E2E03B600F38B03 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B60810191E2E040400F38B03 /* BinaryDict.hpp in Headers */,
+				B608101A1E2E040400F38B03 /* Common.hpp in Headers */,
+				B608101B1E2E040400F38B03 /* Config.hpp in Headers */,
+				B608101C1E2E040400F38B03 /* Conversion.hpp in Headers */,
+				B608101D1E2E040400F38B03 /* ConversionChain.hpp in Headers */,
+				B608101E1E2E040400F38B03 /* Converter.hpp in Headers */,
+				B608101F1E2E040400F38B03 /* DartsDict.hpp in Headers */,
+				B60810201E2E040400F38B03 /* Dict.hpp in Headers */,
+				B60810211E2E040400F38B03 /* DictEntry.hpp in Headers */,
+				B60810221E2E040400F38B03 /* DictGroup.hpp in Headers */,
+				B60810231E2E040400F38B03 /* Exception.hpp in Headers */,
+				B60810241E2E040400F38B03 /* Export.hpp in Headers */,
+				B60810251E2E040400F38B03 /* Lexicon.hpp in Headers */,
+				B60810261E2E040400F38B03 /* MaxMatchSegmentation.hpp in Headers */,
+				B60810271E2E040400F38B03 /* Optional.hpp in Headers */,
+				B60810281E2E040400F38B03 /* PhraseExtract.hpp in Headers */,
+				B60810291E2E040400F38B03 /* Segmentation.hpp in Headers */,
+				B608102A1E2E040400F38B03 /* Segments.hpp in Headers */,
+				B608102B1E2E040400F38B03 /* SerializableDict.hpp in Headers */,
+				B608102C1E2E040400F38B03 /* SimpleConverter.hpp in Headers */,
+				B608102D1E2E040400F38B03 /* TextDict.hpp in Headers */,
+				B608102E1E2E040400F38B03 /* UTF8StringSlice.hpp in Headers */,
+				B608102F1E2E040400F38B03 /* UTF8Util.hpp in Headers */,
+				B60810301E2E040400F38B03 /* opencc.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DAE121CD13B34611B01121C6 /* libopencc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B70CB69EB45448F78CB5CF82 /* Build configuration list for PBXNativeTarget "libopencc" */;
+			buildPhases = (
+				F54C88D76F24401E98897C18 /* Sources */,
+				B60810181E2E03B600F38B03 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libopencc;
+			productName = libopencc;
+			productReference = 11739F6E379F4087816A32E2 /* libopencc.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		976A96B6BC784AFFA66EE363 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 0800;
+			};
+			buildConfigurationList = E383A258BD4D432886144AFA /* Build configuration list for PBXProject "opencc" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D65FCE059F924F12949B3E94;
+			projectDirPath = ../;
+			projectRoot = "";
+			targets = (
+				DAE121CD13B34611B01121C6 /* libopencc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F54C88D76F24401E98897C18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F4F804D36864CBDA5688601 /* BinaryDict.cpp in Sources */,
+				042A583215354E2E8F27FF5D /* Config.cpp in Sources */,
+				79C33CB6F706481E8F87E8F9 /* Conversion.cpp in Sources */,
+				2A5CEAA646084A64B43F7950 /* ConversionChain.cpp in Sources */,
+				3B3F5B66FFBF46FFAA6726FA /* Converter.cpp in Sources */,
+				F1B0AC2B3AC84A66A50BC7BB /* DartsDict.cpp in Sources */,
+				B428E490D6CE4D179E84DCA3 /* Dict.cpp in Sources */,
+				B156E91BD70F40A5963375CC /* DictEntry.cpp in Sources */,
+				2E21AF436D9F4CB39641F677 /* DictGroup.cpp in Sources */,
+				C2014FB469734EABBEA01796 /* MaxMatchSegmentation.cpp in Sources */,
+				036C651AE81D4DC4B78976E6 /* PhraseExtract.cpp in Sources */,
+				1B21A54028384129A394DEB0 /* Segmentation.cpp in Sources */,
+				0DFBA5F3D87348E68BA79967 /* SimpleConverter.cpp in Sources */,
+				62D5386E4707471FAFBBE180 /* TextDict.cpp in Sources */,
+				1A43D6077AB0456FBEBCA577 /* UTF8StringSlice.cpp in Sources */,
+				733FB8A5552C460282A725BD /* UTF8Util.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0DC2BFC2B3EA415F947E6F37 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'PKGDATADIR=\"/usr/local/share//opencc/\"'",
+					"'LOCALEDIR=\"/usr/local/share//locale/\"'",
+					"'VERSION=\"1.0.4\"'",
+					"'PACKAGE_NAME=\"opencc\"'",
+					Opencc_BUILT_AS_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/deps/darts-clone",
+					"$(PROJECT_DIR)/deps/rapidjson-0.11",
+					"$(PROJECT_DIR)/deps/tclap-1.2.1",
+				);
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-std=c++11",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = opencc;
+				PUBLIC_HEADERS_FOLDER_PATH = ../../../../include/opencc;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = MinSizeRel;
+		};
+		2A861F215EA9479AA660E97D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = MinSizeRel;
+		};
+		3BBF06CE097B44B9B5EE3DB2 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'PKGDATADIR=\"/usr/local/share//opencc/\"'",
+					"'LOCALEDIR=\"/usr/local/share//locale/\"'",
+					"'VERSION=\"1.0.4\"'",
+					"'PACKAGE_NAME=\"opencc\"'",
+					Opencc_BUILT_AS_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/deps/darts-clone",
+					"$(PROJECT_DIR)/deps/rapidjson-0.11",
+					"$(PROJECT_DIR)/deps/tclap-1.2.1",
+				);
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-std=c++11",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = opencc;
+				PUBLIC_HEADERS_FOLDER_PATH = ../../../../include/opencc;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = RelWithDebInfo;
+		};
+		54E5C89249DA4BA186D6E8D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'PKGDATADIR=\"/usr/local/share//opencc/\"'",
+					"'LOCALEDIR=\"/usr/local/share//locale/\"'",
+					"'VERSION=\"1.0.4\"'",
+					"'PACKAGE_NAME=\"opencc\"'",
+					Opencc_BUILT_AS_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/deps/darts-clone",
+					"$(PROJECT_DIR)/deps/rapidjson-0.11",
+					"$(PROJECT_DIR)/deps/tclap-1.2.1",
+				);
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNDEBUG",
+					"-std=c++11",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = opencc;
+				PUBLIC_HEADERS_FOLDER_PATH = ../../../../include/opencc;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Release;
+		};
+		84EDEBA5C483481FA3BB7491 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = RelWithDebInfo;
+		};
+		879D5C73612D4732991A3EA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8FB23F7E0F444EAC82AEE04C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",
+					"'PKGDATADIR=\"/usr/local/share//opencc/\"'",
+					"'LOCALEDIR=\"/usr/local/share//locale/\"'",
+					"'VERSION=\"1.0.4\"'",
+					"'PACKAGE_NAME=\"opencc\"'",
+					Opencc_BUILT_AS_STATIC,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/deps/darts-clone",
+					"$(PROJECT_DIR)/deps/rapidjson-0.11",
+					"$(PROJECT_DIR)/deps/tclap-1.2.1",
+				);
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-std=c++11",
+					"-Wall",
+				);
+				OTHER_LIBTOOLFLAGS = " ";
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = opencc;
+				PUBLIC_HEADERS_FOLDER_PATH = ../../../../include/opencc;
+				SECTORDER_FLAGS = "";
+				SKIP_INSTALL = YES;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+					"$(inherited)",
+				);
+			};
+			name = Debug;
+		};
+		CAD46B8DAE934A81956A3038 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B70CB69EB45448F78CB5CF82 /* Build configuration list for PBXNativeTarget "libopencc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FB23F7E0F444EAC82AEE04C /* Debug */,
+				54E5C89249DA4BA186D6E8D6 /* Release */,
+				0DC2BFC2B3EA415F947E6F37 /* MinSizeRel */,
+				3BBF06CE097B44B9B5EE3DB2 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E383A258BD4D432886144AFA /* Build configuration list for PBXProject "opencc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				879D5C73612D4732991A3EA1 /* Debug */,
+				CAD46B8DAE934A81956A3038 /* Release */,
+				2A861F215EA9479AA660E97D /* MinSizeRel */,
+				84EDEBA5C483481FA3BB7491 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 976A96B6BC784AFFA66EE363 /* Project object */;
+}
