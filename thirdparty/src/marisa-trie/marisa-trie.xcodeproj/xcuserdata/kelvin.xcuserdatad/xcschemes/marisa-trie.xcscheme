@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B608F98C1E2C427F00F38B03"
-               BuildableName = "libmarisa-trie.a"
-               BlueprintName = "marisa-trie"
+               BuildableName = "libmarisa.a"
+               BlueprintName = "marisa"
                ReferencedContainer = "container:marisa-trie.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,8 +46,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B608F98C1E2C427F00F38B03"
-            BuildableName = "libmarisa-trie.a"
-            BlueprintName = "marisa-trie"
+            BuildableName = "libmarisa.a"
+            BlueprintName = "marisa"
             ReferencedContainer = "container:marisa-trie.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -64,8 +64,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B608F98C1E2C427F00F38B03"
-            BuildableName = "libmarisa-trie.a"
-            BlueprintName = "marisa-trie"
+            BuildableName = "libmarisa.a"
+            BlueprintName = "marisa"
             ReferencedContainer = "container:marisa-trie.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -7,20 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6080F861E2DF3F700F38B03 /* c.h in Headers */ = {isa = PBXBuildFile; fileRef = B6080F781E2DF3F700F38B03 /* c.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6080F871E2DF3F700F38B03 /* cache.h in Headers */ = {isa = PBXBuildFile; fileRef = B6080F791E2DF3F700F38B03 /* cache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6080F881E2DF3F700F38B03 /* comparator.h in Headers */ = {isa = PBXBuildFile; fileRef = B6080F7A1E2DF3F700F38B03 /* comparator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6080F891E2DF3F700F38B03 /* db.h in Headers */ = {isa = PBXBuildFile; fileRef = B6080F7B1E2DF3F700F38B03 /* db.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6080F8A1E2DF3F700F38B03 /* dumpfile.h in Headers */ = {isa = PBXBuildFile; fileRef = B6080F7C1E2DF3F700F38B03 /* dumpfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6080F8B1E2DF3F700F38B03 /* env.h in Headers */ = {isa = PBXBuildFile; fileRef = B6080F7D1E2DF3F700F38B03 /* env.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6080F8C1E2DF3F700F38B03 /* filter_policy.h in Headers */ = {isa = PBXBuildFile; fileRef = B6080F7E1E2DF3F700F38B03 /* filter_policy.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6080F8D1E2DF3F700F38B03 /* iterator.h in Headers */ = {isa = PBXBuildFile; fileRef = B6080F7F1E2DF3F700F38B03 /* iterator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6080F8E1E2DF3F700F38B03 /* options.h in Headers */ = {isa = PBXBuildFile; fileRef = B6080F801E2DF3F700F38B03 /* options.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6080F8F1E2DF3F700F38B03 /* slice.h in Headers */ = {isa = PBXBuildFile; fileRef = B6080F811E2DF3F700F38B03 /* slice.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6080F901E2DF3F700F38B03 /* status.h in Headers */ = {isa = PBXBuildFile; fileRef = B6080F821E2DF3F700F38B03 /* status.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6080F911E2DF3F700F38B03 /* table_builder.h in Headers */ = {isa = PBXBuildFile; fileRef = B6080F831E2DF3F700F38B03 /* table_builder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6080F921E2DF3F700F38B03 /* table.h in Headers */ = {isa = PBXBuildFile; fileRef = B6080F841E2DF3F700F38B03 /* table.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B6080F931E2DF3F700F38B03 /* write_batch.h in Headers */ = {isa = PBXBuildFile; fileRef = B6080F851E2DF3F700F38B03 /* write_batch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B608FAD11E2C603400F38B03 /* builder.cc in Sources */ = {isa = PBXBuildFile; fileRef = B608FA611E2C603400F38B03 /* builder.cc */; };
 		B608FAD21E2C603400F38B03 /* c.cc in Sources */ = {isa = PBXBuildFile; fileRef = B608FA631E2C603400F38B03 /* c.cc */; };
 		B608FAD51E2C603400F38B03 /* db_bench.cc in Sources */ = {isa = PBXBuildFile; fileRef = B608FA661E2C603400F38B03 /* db_bench.cc */; };
@@ -341,37 +327,12 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		B6080F771E2DF2DF00F38B03 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B6080F861E2DF3F700F38B03 /* c.h in Headers */,
-				B6080F871E2DF3F700F38B03 /* cache.h in Headers */,
-				B6080F881E2DF3F700F38B03 /* comparator.h in Headers */,
-				B6080F891E2DF3F700F38B03 /* db.h in Headers */,
-				B6080F8A1E2DF3F700F38B03 /* dumpfile.h in Headers */,
-				B6080F8B1E2DF3F700F38B03 /* env.h in Headers */,
-				B6080F8C1E2DF3F700F38B03 /* filter_policy.h in Headers */,
-				B6080F8D1E2DF3F700F38B03 /* iterator.h in Headers */,
-				B6080F8E1E2DF3F700F38B03 /* options.h in Headers */,
-				B6080F8F1E2DF3F700F38B03 /* slice.h in Headers */,
-				B6080F901E2DF3F700F38B03 /* status.h in Headers */,
-				B6080F911E2DF3F700F38B03 /* table_builder.h in Headers */,
-				B6080F921E2DF3F700F38B03 /* table.h in Headers */,
-				B6080F931E2DF3F700F38B03 /* write_batch.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		B608FA0B1E2C5F7900F38B03 /* leveldb */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B608FA151E2C5F7900F38B03 /* Build configuration list for PBXNativeTarget "leveldb" */;
 			buildPhases = (
 				B608FA081E2C5F7900F38B03 /* Sources */,
-				B6080F771E2DF2DF00F38B03 /* Headers */,
 			);
 			buildRules = (
 			);

@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B608F98D1E2C427F00F38B03 /* libmarisa-trie.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libmarisa-trie.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B608F98D1E2C427F00F38B03 /* libmarisa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmarisa.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B608F99A1E2C42CB00F38B03 /* agent.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = agent.cc; sourceTree = "<group>"; };
 		B608F99B1E2C42CB00F38B03 /* agent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = agent.h; sourceTree = "<group>"; };
 		B608F99C1E2C42CB00F38B03 /* base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base.h; sourceTree = "<group>"; };
@@ -79,7 +79,7 @@
 		B608F98E1E2C427F00F38B03 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B608F98D1E2C427F00F38B03 /* libmarisa-trie.a */,
+				B608F98D1E2C427F00F38B03 /* libmarisa.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,20 +188,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B608F98C1E2C427F00F38B03 /* marisa-trie */ = {
+		B608F98C1E2C427F00F38B03 /* marisa */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B608F9961E2C427F00F38B03 /* Build configuration list for PBXNativeTarget "marisa-trie" */;
+			buildConfigurationList = B608F9961E2C427F00F38B03 /* Build configuration list for PBXNativeTarget "marisa" */;
 			buildPhases = (
 				B608F9891E2C427F00F38B03 /* Sources */,
-				B60810171E2DFD2600F38B03 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "marisa-trie";
+			name = marisa;
 			productName = "marisa-trie";
-			productReference = B608F98D1E2C427F00F38B03 /* libmarisa-trie.a */;
+			productReference = B608F98D1E2C427F00F38B03 /* libmarisa.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -231,26 +230,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B608F98C1E2C427F00F38B03 /* marisa-trie */,
+				B608F98C1E2C427F00F38B03 /* marisa */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		B60810171E2DFD2600F38B03 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "cp \"$PROJECT_DIR/lib/marisa.h\" \"$PROJECT_DIR/../../include/\"\ncp -R \"$PROJECT_DIR/lib/marisa\" \"$PROJECT_DIR/../../include/\"";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B608F9891E2C427F00F38B03 /* Sources */ = {
@@ -392,7 +375,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B608F9961E2C427F00F38B03 /* Build configuration list for PBXNativeTarget "marisa-trie" */ = {
+		B608F9961E2C427F00F38B03 /* Build configuration list for PBXNativeTarget "marisa" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B608F9971E2C427F00F38B03 /* Debug */,
